@@ -1,0 +1,118 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Allow only one concurrent deployment, skipping runs queued between the run in-progress and latest queued.
+# However, do NOT cancel in-progress runs as we want to allow these production deployments to complete.
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # Build job
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+          cache: "npm"
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Get repository name
+        id: repo
+        run: |
+          REPO_NAME=$(echo ${{ github.repository }} | cut -d'/' -f2)
+          echo "repo_name=$REPO_NAME" >> $GITHUB_OUTPUT
+          echo "Repository name: $REPO_NAME"
+
+      - name: Build with Next.js
+        run: |
+          REPO_NAME="${{ steps.repo.outputs.repo_name }}"
+          echo "Building for repository: $REPO_NAME"
+          
+          # 设置GitHub Actions环境变量
+          export GITHUB_ACTIONS=true
+          export NODE_ENV=production
+          export NEXT_TELEMETRY_DISABLED=1
+          
+          # 如果仓库名称不是 mouse-empire-gov，需要动态设置basePath
+          if [ "$REPO_NAME" != "mouse-empire-gov" ]; then
+            echo "Dynamic configuration for repository: $REPO_NAME"
+            
+            # 使用echo命令逐行创建配置文件，避免heredoc语法问题
+            echo 'import type { NextConfig } from "next";' > next.config.temp.ts
+            echo '' >> next.config.temp.ts
+            echo 'const nextConfig: NextConfig = {' >> next.config.temp.ts
+            echo '  typescript: {' >> next.config.temp.ts
+            echo '    ignoreBuildErrors: true,' >> next.config.temp.ts
+            echo '  },' >> next.config.temp.ts
+            echo '  output: '"'"'export'"'"',' >> next.config.temp.ts
+            echo '  trailingSlash: true,' >> next.config.temp.ts
+            echo '  images: {' >> next.config.temp.ts
+            echo '    unoptimized: true,' >> next.config.temp.ts
+            echo '  },' >> next.config.temp.ts
+            echo "  basePath: '/$REPO_NAME'," >> next.config.temp.ts
+            echo "  assetPrefix: '/$REPO_NAME'," >> next.config.temp.ts
+            echo '  eslint: {' >> next.config.temp.ts
+            echo '    ignoreDuringBuilds: true,' >> next.config.temp.ts
+            echo '  },' >> next.config.temp.ts
+            echo '};' >> next.config.temp.ts
+            echo '' >> next.config.temp.ts
+            echo 'export default nextConfig;' >> next.config.temp.ts
+            
+            # 替换变量
+            sed -i "s/\$REPO_NAME/$REPO_NAME/g" next.config.temp.ts
+            mv next.config.ts next.config.backup.ts
+            mv next.config.temp.ts next.config.ts
+          fi
+          
+          # 构建项目 - 输出模式不需要额外导出步骤
+          npm run build
+          
+          # 恢复原始配置文件
+          if [ -f next.config.backup.ts ]; then
+            mv next.config.backup.ts next.config.ts
+          fi
+
+      - name: Copy .nojekyll to output
+        run: |
+          cp .nojekyll out/ || echo ".nojekyll not found, creating..."
+          echo "" > out/.nojekyll
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./out
+
+  # Deployment job
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
