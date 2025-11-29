@@ -85,7 +85,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh-CN" suppressHydrationWarning>
-      <head>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
+      >
         {/* 结构化数据 - 政府网站 */}
         <script
           type="application/ld+json"
@@ -109,10 +111,6 @@ export default function RootLayout({
             })
           }}
         />
-      </head>
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background text-foreground`}
-      >
         {children}
         <Toaster />
       </body>
