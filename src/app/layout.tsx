@@ -6,11 +6,13 @@ import { Toaster } from "@/components/ui/toaster";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
+  display: "swap", // 优化字体加载
 });
 
 const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
+  display: "swap", // 优化字体加载
 });
 
 export const metadata: Metadata = {
@@ -20,7 +22,7 @@ export const metadata: Metadata = {
     default: "小鼠帝国政府网 - 官方政府门户网站",
   },
   description: "小鼠帝国政府官方网站，为所有帝国公民提供便捷的政府服务信息和在线办理。包括帝国通行证、基础奶酪保障、税务申报等服务。",
-  keywords: ["小鼠帝国", "政府服务", "帝国通行证", "奶酪保障", "税务申报", "公民服务", "移民入籍", "福利申请"],
+  keywords: ["小鼠帝国", "政府服务", "帝国通行证", "奶酪保障", "税务申报", "公民服务", "移民入籍", "福利申请", "政府公告", "在线服务", "小鼠帝国政府"],
   authors: [{ name: "小鼠帝国政府", url: "https://376680.github.io" }],
   publisher: "小鼠帝国政府",
   
@@ -29,6 +31,10 @@ export const metadata: Metadata = {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
     apple: "/favicon.ico",
+    other: {
+      rel: "icon",
+      url: "/favicon.ico",
+    },
   },
   
   // 搜索引擎优化
@@ -50,6 +56,7 @@ export const metadata: Metadata = {
     initialScale: 1,
     maximumScale: 1,
     userScalable: false,
+    viewportFit: "cover",
   },
   
   // 开放图谱
@@ -60,6 +67,14 @@ export const metadata: Metadata = {
     url: "https://376680.github.io",
     siteName: "小鼠帝国政府网",
     locale: "zh_CN",
+    images: [
+      {
+        url: "https://376680.github.io/logo.svg",
+        width: 800,
+        height: 600,
+        alt: "小鼠帝国政府网 Logo",
+      },
+    ],
   },
   
   // Twitter 卡片
@@ -68,6 +83,7 @@ export const metadata: Metadata = {
     title: "小鼠帝国政府网",
     description: "官方政府门户网站 - 让政府服务更易于查找",
     creator: "@mouse_empire",
+    images: ["https://376680.github.io/logo.svg"],
   },
   
   // 其他元标签
@@ -75,7 +91,18 @@ export const metadata: Metadata = {
   generator: "Next.js",
   referrer: "origin-when-cross-origin",
   themeColor: "#1e40af",
-  colorScheme: "light"
+  colorScheme: "light",
+  
+  // 额外的SEO元标签
+  alternates: {
+    canonical: "https://376680.github.io",
+  },
+  
+  // 结构化数据支持
+  verification: {
+    google: "",
+    yandex: "",
+  },
 });
 
 export default function RootLayout({

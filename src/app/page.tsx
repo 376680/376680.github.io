@@ -1,14 +1,24 @@
 "use client";
 
+import { Suspense, lazy } from "react";
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Separator } from "@/components/ui/separator";
 import { AlertTriangle, CreditCard, Users, DollarSign, Heart, Briefcase, FileText, Plane } from "lucide-react";
-import { Header } from "@/components/Header";
-import { Hero } from "@/components/Hero";
-import { QuickActions } from "@/components/QuickActions";
-import { Services } from "@/components/Services";
-import { Announcements } from "@/components/Announcements";
-import { Footer } from "@/components/Footer";
+import { Header } from "@/components/common/Header";
+import { Footer } from "@/components/common/Footer";
+
+// 动态导入组件，实现懒加载
+const Hero = lazy(() => import("@/components/home/Hero"));
+const QuickActions = lazy(() => import("@/components/home/QuickActions"));
+const Services = lazy(() => import("@/components/home/Services"));
+const Announcements = lazy(() => import("@/components/home/Announcements"));
+
+// 加载占位符组件
+const Loading = () => (
+  <div className="flex items-center justify-center py-12">
+    <div className="animate-pulse text-muted-foreground">加载中...</div>
+  </div>
+);
 
 export default function Home() {
   const navigationItems = [
@@ -104,18 +114,26 @@ export default function Home() {
       <Header navigationItems={navigationItems} />
 
       {/* Hero 区域 */}
-      <Hero />
+      <Suspense fallback={<Loading />}>
+        <Hero />
+      </Suspense>
 
       {/* 快捷操作区域 */}
-      <QuickActions quickActions={quickActions} />
+      <Suspense fallback={<Loading />}>
+        <QuickActions quickActions={quickActions} />
+      </Suspense>
 
       <Separator className="my-12" />
 
       {/* 政府服务主题区域 */}
-      <Services services={services} />
+      <Suspense fallback={<Loading />}>
+        <Services services={services} />
+      </Suspense>
 
       {/* 政府公告区域 */}
-      <Announcements />
+      <Suspense fallback={<Loading />}>
+        <Announcements />
+      </Suspense>
 
       {/* 页脚 */}
       <Footer />
