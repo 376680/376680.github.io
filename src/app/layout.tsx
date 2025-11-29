@@ -75,7 +75,7 @@ export const metadata: Metadata = {
   generator: "Next.js",
   referrer: "origin-when-cross-origin",
   themeColor: "#1e40af",
-  colorScheme: "light",
+  colorScheme: "light"
 });
 
 export default function RootLayout({
