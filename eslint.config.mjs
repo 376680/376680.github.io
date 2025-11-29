@@ -14,36 +14,36 @@ const eslintConfig = [
   {
     rules: {
       // TypeScript 相关规则
-      "@typescript-eslint/no-explicit-any": "off",
-      "@typescript-eslint/no-unused-vars": "off",
-      "@typescript-eslint/no-non-null-assertion": "off",
-      "@typescript-eslint/ban-ts-comment": "off",
-      "@typescript-eslint/prefer-as-const": "off",
+      "@typescript-eslint/no-explicit-any": "warn",
+      "@typescript-eslint/no-unused-vars": "warn",
+      "@typescript-eslint/no-non-null-assertion": "warn",
+      "@typescript-eslint/ban-ts-comment": "warn",
+      "@typescript-eslint/prefer-as-const": "warn",
       
       // React 相关规则
-      "react-hooks/exhaustive-deps": "off",
-      "react/no-unescaped-entities": "off",
-      "react/display-name": "off",
-      "react/prop-types": "off",
+      "react-hooks/exhaustive-deps": "warn",
+      "react/no-unescaped-entities": "warn",
+      "react/display-name": "warn",
+      "react/prop-types": "off", // TypeScript 项目不需要 prop-types
       
       // Next.js 相关规则
-      "@next/next/no-img-element": "off",
-      "@next/next/no-html-link-for-pages": "off",
+      "@next/next/no-img-element": "warn", // 建议使用 next/image
+      "@next/next/no-html-link-for-pages": "warn", // 建议使用 Link 组件
       
       // 一般JavaScript规则
-      "prefer-const": "off",  // 关闭prefer-const规则
-      "no-unused-vars": "off",
-      "no-console": "off",
-      "no-debugger": "off",
-      "no-empty": "off",
-      "no-irregular-whitespace": "off",
-      "no-case-declarations": "off",
-      "no-fallthrough": "off",
-      "no-mixed-spaces-and-tabs": "off",
-      "no-redeclare": "off",
-      "no-undef": "off",
-      "no-unreachable": "off",
-      "no-useless-escape": "off",
+      "prefer-const": "warn",
+      "no-unused-vars": "warn",
+      "no-console": "warn",
+      "no-debugger": "error",
+      "no-empty": "warn",
+      "no-irregular-whitespace": "error",
+      "no-case-declarations": "warn",
+      "no-fallthrough": "warn",
+      "no-mixed-spaces-and-tabs": "error",
+      "no-redeclare": "warn",
+      "no-undef": "off", // TypeScript 会处理未定义变量
+      "no-unreachable": "warn",
+      "no-useless-escape": "warn",
     },
   },
 ];
