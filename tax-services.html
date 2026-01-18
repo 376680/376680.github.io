@@ -4,178 +4,811 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>税务服务 - 小鼠帝国总务管理局</title>
-<link rel="stylesheet" media="all" href="css/style1.css">
-<link rel="stylesheet" media="all" href="css/style2.css">
+<meta name="description" content="小鼠帝国税务部提供尾巴税、奶酪税、洞穴税、胡须税等创新税务服务，支持千鼠万店税收优惠计划，确保税收合规">
+<meta name="keywords" content="小鼠帝国税务,尾巴税,奶酪税,洞穴税,胡须税,税收优惠,千鼠万店,税收合规">
+<link rel="stylesheet" href="css/style1.css">
+<link rel="stylesheet" href="css/style2.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-  <div class="usa-banner" aria-label="官方网站标识" id="usagov-banner">
+  <!-- 官方横幅 -->
+  <section class="usa-banner" aria-label="Official government website">
     <div class="usa-accordion">
       <header class="usa-banner__header">
         <div class="usa-banner__inner">
           <div class="grid-col-auto">
-            <i class="fas fa-flag" style="font-size: 20px; color: #007bff;" aria-hidden="true"></i>
+            <img class="usa-banner__header-flag" src="https://cdnjs.cloudflare.com/ajax/libs/uswds/3.0.0/img/us_flag_small.png" alt="U.S. flag">
           </div>
           <div class="grid-col-fill tablet:grid-col-auto">
-            <p class="usa-banner__header-text">
-              小鼠帝国官方政府网站
-            </p>
+            <p class="usa-banner__header-text">小鼠帝国官方政府网站</p>
           </div>
         </div>
       </header>
     </div>
-  </div>
+  </section>
 
-  <div class="usa-overlay"></div>
-
-  <header class="usa-header usa-header--extended" role="banner">
+  <!-- 导航头部 -->
+  <header class="usa-header usa-header--extended">
     <div class="usa-navbar">
       <div class="usa-logo" id="extended-logo">
-        <em class="usa-logo-text">
+        <em class="usa-logo__text">
           <a href="index.html" title="小鼠帝国总务管理局">
-            <span style="font-size: 24px; font-weight: bold; color: #1b1b1b; text-decoration: none; display: flex; align-items: center; gap: 10px;">
-              <img src="images/logo.png" alt="小鼠帝国总务管理局" style="height: 32px; width: auto;">
-              <span>小鼠帝国总务管理局</span>
+            <span class="logo-container">
+              <img src="images/logo.png" alt="小鼠帝国总务管理局" class="logo-image">
+              <span class="logo-text">小鼠帝国总务管理局</span>
             </span>
           </a>
         </em>
       </div>
-
-      <div class="navbar-right">
-        <button class="usa-menu-btn">导航菜单</button>
+      <button class="usa-menu-btn">菜单</button>
+    </div>
+    <nav aria-label="Primary navigation" class="usa-nav">
+      <div class="usa-nav__inner">
+        <button class="usa-nav__close">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="usa-nav__primary usa-accordion">
+          <li class="usa-nav__primary-item">
+            <a href="index.html" class="usa-nav__link"><span>首页</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="personal-services.html" class="usa-nav__link"><span>个人服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="business-services.html" class="usa-nav__link"><span>企业服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="health-services.html" class="usa-nav__link"><span>医疗服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="housing-services.html" class="usa-nav__link"><span>住房服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="jobs-services.html" class="usa-nav__link"><span>就业服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="immigration-services.html" class="usa-nav__link"><span>移民服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="travel-services.html" class="usa-nav__link"><span>旅游服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="education-services.html" class="usa-nav__link"><span>教育服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="disaster-services.html" class="usa-nav__link"><span>灾难援助</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="tax-services.html" class="usa-nav__link usa-current"><span>税务服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="identity-services.html" class="usa-nav__link"><span>身份服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="complaints-services.html" class="usa-nav__link"><span>投诉服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="scams-services.html" class="usa-nav__link"><span>欺诈防范</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="small-business-services.html" class="usa-nav__link"><span>小企业服务</span></a>
+          </li>
+        </ul>
         <div class="usa-nav__secondary">
-          <div class="usa-nav__secondary-links">
-            <div>
-              <span id="top-phone" class="usa-nav__secondary-item" data-contact-callout="visible">
-                <a href="#" style="white-space: nowrap;">政府服务热线：1-844-MOUSE-GOV</a>
-              </span>
+          <ul class="usa-nav__secondary-links">
+            <li class="usa-nav__secondary-item">
+              <a href="tel:1-844-小鼠-政府">
+                <span>政府服务热线：1-844-小鼠-政府</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- 英雄区域 -->
+    <section class="usa-hero" aria-label="Introduction">
+      <div class="usa-hero__callout">
+        <h1 class="usa-hero__heading"><span class="usa-hero__heading--alt">税务服务</span>小鼠帝国税收新纪元</h1>
+        <p class="usa-hero__description">从尾巴税到奶酪税，从洞穴税到胡须税，小鼠帝国税务部为您提供最具创新性的税收服务。加入我们的千鼠万店税收优惠计划，享受前所未有的税收减免！</p>
+        <div class="usa-hero__button-group">
+          <a class="usa-button usa-button--primary" href="#tax-services">探索创新税种</a>
+          <a class="usa-button usa-button--outline" href="#tax-benefits">千鼠万店优惠</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 税务服务概述 -->
+    <section class="usa-section" id="overview">
+      <div class="grid-container">
+        <div class="usa-summary-box">
+          <div class="usa-summary-box__body">
+            <h3 class="usa-summary-box__heading">小鼠帝国税务服务概览</h3>
+            <div class="usa-summary-box__text">
+              <p>我们提供小鼠世界最具创新性的税收服务体系，涵盖尾巴相关税收、奶酪产业税收、洞穴使用税收等前沿领域。通过我们的服务，您将获得：</p>
+              <ul class="usa-list">
+                <li>尾巴长度税和尾巴摆动税专业服务</li>
+                <li>奶酪消费税和奶酪品质税优惠政策</li>
+                <li>洞穴面积税和洞穴深度税减免服务</li>
+                <li>胡须密度税和胡须造型税个性化方案</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 统计数据 -->
+        <div class="grid-row grid-gap-lg margin-top-6">
+          <div class="tablet:grid-col-3">
+            <div class="usa-stat">
+              <div class="usa-stat__number">99,999+</div>
+              <div class="usa-stat__label">尾巴税纳税人</div>
+            </div>
+          </div>
+          <div class="tablet:grid-col-3">
+            <div class="usa-stat">
+              <div class="usa-stat__number">75,000+</div>
+              <div class="usa-stat__label">奶酪税征收额</div>
+            </div>
+          </div>
+          <div class="tablet:grid-col-3">
+              <div class="usa-stat">
+                <div class="usa-stat__number">150%</div>
+              <div class="usa-stat__label">胡须税增长率</div>
+            </div>
+          </div>
+          <div class="tablet:grid-col-3">
+            <div class="usa-stat">
+              <div class="usa-stat__number">24/7</div>
+              <div class="usa-stat__label">洞穴税在线服务</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 创新税务服务 -->
+    <section class="usa-section usa-section--dark" id="tax-services">
+      <div class="grid-container">
+        <h2 class="font-heading-xl margin-top-0">创新税务服务</h2>
+        <p class="usa-intro">探索小鼠世界最前沿的税收服务，从传统的尾巴税到创新的奶酪分子税，每一种税种都是为小鼠帝国量身定制的财政创新。</p>
+        
+        <div class="grid-row grid-gap-lg margin-top-4">
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">尾巴税专业服务</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>成为尾巴税专业纳税人，根据尾巴长度、粗度、弹性、摆动频率缴纳相应税费。掌握尾巴税计算、申报、优化的专业技能。</p>
+                  <ul class="usa-list">
+                    <li>尾巴长度税计算</li>
+                    <li>尾巴摆动税申报</li>
+                    <li>尾巴税优化策略</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openTaxModal('tail-tax')">尾巴税申报</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">奶酪税专业服务</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>根据奶酪消费量、品质等级、产地来源缴纳相应税费。掌握奶酪税评估、申报、减免的专业技能，成为奶酪税专家。</p>
+                  <ul class="usa-list">
+                    <li>奶酪消费税评估</li>
+                    <li>奶酪品质税申报</li>
+                    <li>奶酪税减免申请</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openTaxModal('cheese-tax')">奶酪税申报</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">洞穴税专业服务</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>根据洞穴面积、深度、位置、装修标准缴纳相应税费。掌握洞穴税测量、申报、争议处理的专业技能。</p>
+                  <ul class="usa-list">
+                    <li>洞穴面积税测量</li>
+                    <li>洞穴深度税申报</li>
+                    <li>洞穴税争议处理</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openTaxModal('cave-tax')">洞穴税申报</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 千鼠万店税收优惠计划 -->
+    <section class="usa-section" id="tax-benefits">
+      <div class="grid-container">
+        <h2 class="font-heading-xl margin-top-0">千鼠万店税收优惠计划</h2>
+        <p class="usa-intro">加入小鼠帝国历史上最雄心勃勃的税收优惠计划！我们致力于在五年内为开设特色店铺的小鼠企业提供前所未有的税收减免，从尾巴美容院到奶酪精品店，从洞穴装修公司到胡须造型工作室。</p>
+        
+        <div class="grid-row grid-gap-lg margin-top-4">
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">尾巴美容院税收优惠</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>开设专业的尾巴美容院，享受尾巴税减免、营业税优惠、所得税减免等全方位税收支持。降低经营成本，提高盈利能力。</p>
+                  <ul class="usa-list">
+                    <li>尾巴税减免50%</li>
+                    <li>营业税优惠30%</li>
+                    <li>所得税减免25%</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openBenefitModal('tail-salon')">申请优惠</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">奶酪精品店税收优惠</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>经营精品奶酪店，享受奶酪税减免、增值税优惠、消费税减免等全方位税收支持。降低采购成本，提高市场竞争力。</p>
+                  <ul class="usa-list">
+                    <li>奶酪税减免40%</li>
+                    <li>增值税优惠20%</li>
+                    <li>消费税减免35%</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openBenefitModal('cheese-shop')">申请优惠</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">胡须造型工作室税收优惠</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>开设专业的胡须造型工作室，享受胡须税减免、服务税优惠、营业税减免等全方位税收支持。降低运营成本，提高服务品质。</p>
+                  <ul class="usa-list">
+                    <li>胡须税减免60%</li>
+                    <li>服务税优惠25%</li>
+                    <li>营业税减免30%</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openBenefitModal('whisker-studio')">申请优惠</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 创新税务支持服务 -->
+    <section class="usa-section usa-section--dark" id="tax-support">
+      <div class="grid-container">
+        <h2 class="font-heading-xl margin-top-0">创新税务支持服务</h2>
+        <p class="usa-intro">为小鼠纳税人提供前所未有的税务支持服务，从尾巴长度测量到胡须密度分析，从奶酪偏好测试到洞穴适应性评估，我们为每一位小鼠量身定制最适合的税务方案。</p>
+        
+        <div class="grid-row grid-gap-lg margin-top-4">
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">尾巴税务评估师</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>成为专业的尾巴税务评估师，为小鼠纳税人提供尾巴长度、粗度、弹性、摆动频率的税务评估服务。掌握税务评估、申报指导、争议处理的专业技术。</p>
+                  <ul class="usa-list">
+                    <li>尾巴税务评估认证</li>
+                    <li>申报指导专业培训</li>
+                    <li>争议处理技术指导</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openSupportModal('tail-assessment')">评估认证</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">奶酪税务分析师</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>成为奶酪税务分析专家，为小鼠纳税人提供奶酪消费量、品质等级、产地来源的税务分析服务。掌握税务分析、优化建议、政策解读的专业技术。</p>
+                  <ul class="usa-list">
+                    <li>奶酪税务分析认证</li>
+                    <li>优化建议专业培训</li>
+                    <li>政策解读专业指导</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openSupportModal('cheese-analysis')">分析认证</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">洞穴税务测量员</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>成为洞穴税务测量专家，为小鼠纳税人提供洞穴面积、深度、位置、装修标准的税务测量服务。掌握税务测量、标准制定、争议解决的专业技术。</p>
+                  <ul class="usa-list">
+                    <li>洞穴税务测量认证</li>
+                    <li>标准制定专业培训</li>
+                    <li>争议解决专业指导</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openSupportModal('cave-measurement')">测量认证</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 洞穴税务争议调解 -->
+    <section class="usa-section" id="tax-mediation">
+      <div class="grid-container">
+        <h2 class="font-heading-xl margin-top-0">洞穴税务争议调解服务</h2>
+        <p class="usa-intro">为小鼠纳税人提供专业的税务争议调解服务，确保每一位小鼠在税收争议中都能得到公平、公正、专业的解决方案。从尾巴税争议到奶酪税纠纷，从洞穴税分歧到胡须税申诉，我们为您提供全方位的争议解决支持。</p>
+        
+        <div class="grid-row grid-gap-lg margin-top-4">
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">尾巴税务争议调解师</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>成为专业的尾巴税务争议调解师，为小鼠纳税人提供尾巴税争议、申诉、复议的专业调解服务。掌握调解技巧、法律依据、解决方案的专业技能。</p>
+                  <ul class="usa-list">
+                    <li>尾巴税务争议调解</li>
+                    <li>法律依据专业分析</li>
+                    <li>解决方案专业建议</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openMediationModal('tail-mediation')">调解认证</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">奶酪税务纠纷协调员</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>成为奶酪税务纠纷协调专家，为小鼠纳税人提供奶酪税纠纷、申诉、复议的专业协调服务。掌握协调技巧、政策解读、纠纷解决的专业技能。</p>
+                  <ul class="usa-list">
+                    <li>奶酪税务纠纷协调</li>
+                    <li>政策解读专业分析</li>
+                    <li>纠纷解决专业建议</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openMediationModal('cheese-mediation')">协调认证</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">洞穴税务申诉代理员</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>成为洞穴税务申诉代理专家，为小鼠纳税人提供洞穴税申诉、复议、诉讼的专业代理服务。掌握代理技巧、法律程序、申诉策略的专业技能。</p>
+                  <ul class="usa-list">
+                    <li>洞穴税务申诉代理</li>
+                    <li>法律程序专业指导</li>
+                    <li>申诉策略专业建议</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openMediationModal('cave-mediation')">代理认证</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section class="usa-section usa-section--dark" id="faq">
+      <div class="grid-container">
+        <h2 class="font-heading-xl margin-top-0">常见问题解答</h2>
+        <p class="usa-intro">为您解答小鼠帝国税务服务使用过程中的常见疑问，从尾巴税计算标准到奶酪税申报要求，从洞穴税测量规范到胡须税争议处理。</p>
+        
+        <div class="usa-accordion margin-top-4">
+          <h4 class="usa-accordion__heading">
+            <button class="usa-accordion__button" aria-expanded="false" aria-controls="faq1">
+              如何计算尾巴税？
+            </button>
+          </h4>
+          <div id="faq1" class="usa-accordion__content">
+            <p>尾巴税的计算方法：</p>
+            <ol class="usa-list">
+              <li>测量您的尾巴长度（精确到毫米）</li>
+              <li>评估尾巴粗度（使用标准测量仪器）</li>
+              <li>测试尾巴弹性（专业弹性测试）</li>
+              <li>记录尾巴摆动频率（每分钟摆动次数）</li>
+              <li>应用尾巴税计算公式：税额 = (长度×0.1 + 粗度×0.05 + 弹性×0.08 + 频率×0.02) × 税率</li>
+              <li>根据尾巴健康状况享受相应减免</li>
+            </ol>
+            <p>尾巴税按季度申报，税率为每厘米长度征收5克奶酪的等值货币。</p>
+          </div>
+
+          <h4 class="usa-accordion__heading">
+            <button class="usa-accordion__button" aria-expanded="false" aria-controls="faq2">
+              千鼠万店税收优惠计划有什么特殊要求？
+            </button>
+          </h4>
+          <div id="faq2" class="usa-accordion__content">
+            <p>千鼠万店税收优惠计划的特殊要求如下：</p>
+            <ul class="usa-list">
+              <li><strong>尾巴长度要求：</strong>申请者尾巴长度必须达到20厘米以上，以确保良好的商业形象</li>
+              <li><strong>胡须密度标准：</strong>胡须密度必须达到每平方厘米60根以上，体现良好的感官能力</li>
+              <li><strong>奶酪消费记录：</strong>需要提供连续三年的奶酪消费记录，证明对奶酪产业的支持</li>
+              <li><strong>洞穴经营场所：</strong>必须拥有合法的经营洞穴，面积不少于50平方米</li>
+              <li><strong>创业资金要求：</strong>需要自备至少500克优质奶酪作为启动资金证明</li>
+              <li><strong>家族纳税记录：</strong>申请者家族中至少有连续五代小鼠纳税记录</li>
+            </ul>
+            <p>所有申请者都需要通过严格的尾巴摆动频率测试，确保具备良好的商业素质。</p>
+          </div>
+
+          <h4 class="usa-accordion__heading">
+            <button class="usa-accordion__button" aria-expanded="false" aria-controls="faq3">
+              奶酪税的主要申报内容是什么？
+            </button>
+          </h4>
+          <div id="faq3" class="usa-accordion__content">
+            <p>奶酪税的主要申报内容包括：</p>
+            <ul class="usa-list">
+              <li><strong>奶酪消费量申报：</strong>详细记录每月消费的奶酪数量、种类、品牌</li>
+              <li><strong>奶酪品质等级：</strong>按照小鼠帝国奶酪品质标准进行分类申报</li>
+              <li><strong>奶酪产地来源：</strong>申报奶酪的原产地、进口来源、生产厂家</li>
+              <li><strong>奶酪营养成分：</strong>申报奶酪的蛋白质、脂肪、钙含量等营养指标</li>
+              <li><strong>奶酪储存条件：</strong>申报奶酪的储存温度、湿度、通风条件</li>
+              <li><strong>奶酪消费用途：</strong>区分个人消费、商业用途、礼品赠送等不同用途</li>
+            </ul>
+            <p>奶酪税按消费金额征收，税率为消费金额的12%，但优质奶酪可享受减免优惠。</p>
+          </div>
+
+          <h4 class="usa-accordion__heading">
+            <button class="usa-accordion__button" aria-expanded="false" aria-controls="faq4">
+              洞穴税的职业前景如何？
+            </button>
+          </h4>
+          <div id="faq4" class="usa-accordion__content">
+            <p>洞穴税征收员的职业前景非常广阔：</p>
+            <ul class="usa-list">
+              <li><strong>需求量大：</strong>随着小鼠洞穴数量增长，对专业洞穴税征收员的需求持续增加，年增长率达到45%</li>
+              <li><strong>薪资水平高：</strong>初级征收员月薪可达600克奶酪，资深征收员月薪超过2500克</li>
+              <li><strong>技术含量高：</strong>需要掌握洞穴测量技术、税法知识、沟通协调等多项专业技能</li>
+              <li><strong>社会地位高：</strong>在小鼠社会中享有很高声誉，被誉为"洞穴财政官"</li>
+              <li><strong>发展空间大：</strong>可向洞穴税评估师、税务稽查员、税收政策专家等方向发展</li>
+              <li><strong>国际机会多：</strong>小鼠帝国的洞穴税制度世界领先，有机会参与国际税收制度建设项目</li>
+            </ul>
+            <p>该职业需要通过严格的洞穴测量技术认证和税法考试，但回报丰厚，是小鼠帝国最受欢迎的税收职业之一。</p>
+          </div>
+
+          <h4 class="usa-accordion__heading">
+            <button class="usa-accordion__button" aria-expanded="false" aria-controls="faq5">
+              胡须造型税需要具备哪些条件？
+            </button>
+          </h4>
+          <div id="faq5" class="usa-accordion__content">
+            <p>胡须造型税需要具备以下条件：</p>
+            <ul class="usa-list">
+              <li><strong>胡须长度要求：</strong>自身胡须长度必须达到12厘米以上，展现良好的造型基础</li>
+              <li><strong>密度标准：</strong>胡须密度必须达到每平方厘米70根以上，确保造型的饱满度和层次感</li>
+              <li><strong>造型复杂度：</strong>根据胡须造型的复杂程度、创意水平、技术含量确定税额</li>
+              <li><strong>色彩多样性：</strong>能够处理不同颜色的胡须造型，包括自然色、染色、渐变色等</li>
+              <li><strong>造型创新性：</strong>具备创意设计能力，能够根据流行趋势设计独特造型</li>
+              <li><strong>社会影响力：</strong>胡须造型在社会上的影响力、知名度、示范效应</li>
+            </ul>
+            <p>胡须造型税按造型复杂度和影响力征收，基础税率为每厘米长度征收8克奶酪的等值货币，但创新造型可享受税收优惠。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section class="usa-section" id="contact">
+      <div class="grid-container">
+        <h2 class="font-heading-xl margin-top-0">需要税务帮助？</h2>
+        <p class="usa-intro">我们的小鼠帝国税务服务团队随时为您提供专业咨询和支持，从尾巴税申报咨询到奶酪税指导，从洞穴税分析到胡须税建议。</p>
+        
+        <div class="grid-row grid-gap-lg margin-top-4">
+          <div class="tablet:grid-col-3">
+            <div class="usa-summary-box">
+              <div class="usa-summary-box__body text-center">
+                <i class="fas fa-phone fa-2x text-primary margin-bottom-2"></i>
+                <h3 class="usa-summary-box__heading">尾巴税务热线</h3>
+                <p class="usa-summary-box__text">
+                  <strong>400-TAIL-TAX</strong><br>
+                  周一至周五 9:00-17:00
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-3">
+            <div class="usa-summary-box">
+              <div class="usa-summary-box__body text-center">
+                <i class="fas fa-envelope fa-2x text-primary margin-bottom-2"></i>
+                <h3 class="usa-summary-box__heading">奶酪税务邮箱</h3>
+                <p class="usa-summary-box__text">
+                  <strong>cheese@taxmouse.com</strong><br>
+                  24小时内回复
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-3">
+            <div class="usa-summary-box">
+              <div class="usa-summary-box__body text-center">
+                <i class="fas fa-comments fa-2x text-primary margin-bottom-2"></i>
+                <h3 class="usa-summary-box__heading">胡须税务咨询</h3>
+                <p class="usa-summary-box__text">
+                  胡须造型税务顾问在线<br>
+                  工作日 9:00-18:00
+                </p>
+                <button class="usa-button usa-button--outline margin-top-2" onclick="openTaxChat()">开始咨询</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-3">
+            <div class="usa-summary-box">
+              <div class="usa-summary-box__body text-center">
+                <i class="fas fa-map-marker-alt fa-2x text-primary margin-bottom-2"></i>
+                <h3 class="usa-summary-box__heading">洞穴税务中心</h3>
+                <p class="usa-summary-box__text">
+                  就近洞穴税务网点<br>
+                  预约制服务
+                </p>
+                <button class="usa-button usa-button--outline margin-top-2" onclick="findTaxCenter()">查找洞穴</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="usa-footer">
+    <div class="usa-footer__secondary-section">
+      <div class="grid-container">
+        <div class="grid-row grid-gap">
+          <div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
+            <div class="mobile-lg:grid-col-auto">
+              <img class="usa-footer__logo-img" src="images/logo.png" alt="小鼠帝国总务管理局">
+            </div>
+            <div class="mobile-lg:grid-col-auto">
+              <h3 class="usa-footer__logo-heading">小鼠帝国总务管理局</h3>
+            </div>
+          </div>
+          <div class="usa-footer__contact-links mobile-lg:grid-col-6">
+            <div class="usa-footer__social-links">
+              <a href="tel:400-TAIL-TAX" class="usa-footer__social-link">
+                <span>尾巴税务热线：400-TAIL-TAX</span>
+              </a>
+              <a href="mailto:cheese@taxmouse.com" class="usa-footer__social-link">
+                <span>奶酪税务邮箱：cheese@taxmouse.com</span>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </header>
-
-  <div class="banner-wrapper">
-    <div class="banner-div" style="background-image: url(images/Homepage_Banner.png.webp);"></div>
-  </div>
-
-  <div class="welcome-box-wrapper">
-    <div class="welcome-box">
-      <h1 id="skip-to-h1" style="color: #ffffff;">
-        税务服务
-      </h1>
-      <p style="color: #ffffff;">
-        小鼠帝国总务管理局为您提供全面的税务服务，包括在线税务申报服务，税务咨询和帮助，税务优惠政策查询。
-      </p>
-    </div>
-  </div>
-
-  <main class="main-content usa-layout-docs no-footer-gap" id="main-content">
-    <div class="grid-container usa-section">
-      <div class="usa-accordion" style="margin-top: 2rem;">
-        <h2 class="usa-accordion__heading">
-          <button class="usa-accordion__button" aria-expanded="false" aria-controls="acc1">
-            <span class="usa-accordion__button-text">个人所得税</span>
-            <span class="usa-accordion__icon" aria-hidden="true"></span>
-          </button>
-        </h2>
-        <div id="acc1" class="usa-accordion__content usa-prose">
-          <p>了解小鼠帝国个人所得税政策，包括税率、扣除项目、申报流程等。我们提供个人所得税申报指导和咨询服务。</p>
-          <ul>
-            <li>个人所得税税率</li>
-            <li>扣除项目和标准</li>
-            <li>申报流程和期限</li>
-            <li>个人所得税计算</li>
-          </ul>
-        </div>
-
-        <h2 class="usa-accordion__heading">
-          <button class="usa-accordion__button" aria-expanded="false" aria-controls="acc2">
-            <span class="usa-accordion__button-text">企业所得税</span>
-            <span class="usa-accordion__icon" aria-hidden="true"></span>
-          </button>
-        </h2>
-        <div id="acc2" class="usa-accordion__content usa-prose">
-          <p>了解小鼠帝国企业所得税政策，包括税率、优惠政策、申报流程等。我们提供企业所得税申报指导和咨询服务。</p>
-          <ul>
-            <li>企业所得税税率</li>
-            <li>税收优惠政策</li>
-            <li>申报流程和期限</li>
-            <li>企业所得税计算</li>
-          </ul>
-        </div>
-
-        <h2 class="usa-accordion__heading">
-          <button class="usa-accordion__button" aria-expanded="false" aria-controls="acc3">
-            <span class="usa-accordion__button-text">增值税</span>
-            <span class="usa-accordion__icon" aria-hidden="true"></span>
-          </button>
-        </h2>
-        <div id="acc3" class="usa-accordion__content usa-prose">
-          <p>了解小鼠帝国增值税政策，包括税率、征收范围、申报流程等。我们提供增值税申报指导和咨询服务。</p>
-          <ul>
-            <li>增值税税率和征收率</li>
-            <li>征收范围和免税项目</li>
-            <li>申报流程和期限</li>
-            <li>增值税发票管理</li>
-          </ul>
-        </div>
-
-        <h2 class="usa-accordion__heading">
-          <button class="usa-accordion__button" aria-expanded="false" aria-controls="acc4">
-            <span class="usa-accordion__button-text">其他税费</span>
-            <span class="usa-accordion__icon" aria-hidden="true"></span>
-          </button>
-        </h2>
-        <div id="acc4" class="usa-accordion__content usa-prose">
-          <p>了解小鼠帝国其他税费政策，包括房产税、土地使用税、印花税等。我们提供各种税费的申报指导和咨询服务。</p>
-          <ul>
-            <li>房产税政策</li>
-            <li>土地使用税政策</li>
-            <li>印花税政策</li>
-            <li>其他税费政策</li>
-          </ul>
-        </div>
-
-        <h2 class="usa-accordion__heading">
-          <button class="usa-accordion__button" aria-expanded="false" aria-controls="acc5">
-            <span class="usa-accordion__button-text">税务咨询和服务</span>
-            <span class="usa-accordion__icon" aria-hidden="true"></span>
-          </button>
-        </h2>
-        <div id="acc5" class="usa-accordion__content usa-prose">
-          <p>获取税务咨询和服务，包括税务登记、发票管理、税收优惠申请等。我们提供全面的税务服务支持。</p>
-          <ul>
-            <li>税务登记服务</li>
-            <li>发票管理服务</li>
-            <li>税收优惠申请</li>
-            <li>税务筹划咨询</li>
-          </ul>
+    <div class="usa-footer__primary-section">
+      <div class="grid-container">
+        <div class="grid-row grid-gap-lg">
+          <div class="desktop:grid-col-3">
+            <h4 class="usa-footer__primary-link">税务服务</h4>
+            <ul class="usa-list usa-list--unstyled">
+              <li><a href="#tax-services">创新税种</a></li>
+              <li><a href="#tax-benefits">税收优惠</a></li>
+              <li><a href="#tax-support">税务支持</a></li>
+              <li><a href="#tax-mediation">争议调解</a></li>
+            </ul>
+          </div>
+          <div class="desktop:grid-col-3">
+            <h4 class="usa-footer__primary-link">快速链接</h4>
+            <ul class="usa-list usa-list--unstyled">
+              <li><a href="index.html">首页</a></li>
+              <li><a href="personal-services.html">个人服务</a></li>
+              <li><a href="business-services.html">企业服务</a></li>
+              <li><a href="health-services.html">医疗服务</a></li>
+            </ul>
+          </div>
+          <div class="desktop:grid-col-3">
+            <h4 class="usa-footer__primary-link">税务资源</h4>
+            <ul class="usa-list usa-list--unstyled">
+              <li><a href="#" onclick="openTaxCalculator()">税务计算器</a></li>
+              <li><a href="#" onclick="findTaxCenter()">税务中心</a></li>
+              <li><a href="#faq">常见问题</a></li>
+              <li><a href="#" onclick="openTaxChat()">税务咨询</a></li>
+            </ul>
+          </div>
+          <div class="desktop:grid-col-3">
+            <h4 class="usa-footer__primary-link">联系我们</h4>
+            <ul class="usa-list usa-list--unstyled">
+              <li><i class="fas fa-phone"></i> 400-TAIL-TAX</li>
+              <li><i class="fas fa-envelope"></i> cheese@taxmouse.com</li>
+              <li><i class="fas fa-clock"></i> 周一至周五 9:00-17:00</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </main>
-
-  <footer class="usa-footer usa-footer--big" role="contentinfo">
-    <div class="grid-container usa-footer__return-to-top">
-      <a href="#">返回顶部</a>
-    </div>
-    <div class="usa-footer__primary-section">
-      <div class="grid-row">
-        <div class="usa-footer__logo grid-row mobile-lg:grid-col-6">
-          <div>
-            <h4 class="usa-footer__logo-heading">小鼠帝国总务管理局</h4>
-          </div>
+    <div class="usa-footer__secondary-section">
+      <div class="grid-container">
+        <div class="usa-footer__secondary-links">
+          <nav class="usa-footer__nav">
+            <ul class="usa-footer__primary-content">
+              <li class="usa-footer__primary-link"><a href="#">隐私政策</a></li>
+              <li class="usa-footer__primary-link"><a href="#">使用条款</a></li>
+              <li class="usa-footer__primary-link"><a href="#">网站地图</a></li>
+              <li class="usa-footer__primary-link"><a href="#">无障碍声明</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="usa-footer__contact-links">
+          <p>&copy; 2024 小鼠帝国总务管理局. 保留所有权利.</p>
         </div>
       </div>
     </div>
   </footer>
 
-<script src="js/newFooter.js" defer="defer"></script>
-<script src="js/main.js"></script>
-<script src="js/accordion.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/accordion.js"></script>
+  <script src="js/modifyMobileNav.js"></script>
+  <script>
+    // 页面特定功能
+    function openTaxModal(taxType) {
+      alert('正在打开' + taxType + '税务申报页面...');
+    }
 
+    function openBenefitModal(benefitType) {
+      alert('正在打开' + benefitType + '税收优惠申请页面...');
+    }
+
+    function openSupportModal(supportType) {
+      alert('正在打开' + supportType + '税务支持服务申请页面...');
+    }
+
+    function openMediationModal(mediationType) {
+      alert('正在打开' + mediationType + '税务争议调解服务申请页面...');
+    }
+
+    function openTaxCalculator() {
+      alert('税务计算器功能即将开放！');
+    }
+
+    function openTaxChat() {
+      alert('税务在线咨询功能即将开放，请使用尾巴电话咨询！');
+    }
+
+    function findTaxCenter() {
+      alert('洞穴税务服务中心查询功能即将开放！');
+    }
+
+    // 平滑滚动到指定部分
+    function scrollToSection(sectionId) {
+      document.getElementById(sectionId).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+
+    // 页面加载完成后的初始化
+    document.addEventListener('DOMContentLoaded', function() {
+      // 添加数字动画效果
+      const observerOptions = {
+        threshold: 0.5,
+        rootMargin: '0px 0px -100px 0px'
+      };
+
+      const statsObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const numberElement = entry.target.querySelector('.usa-stat__number');
+            if (numberElement) {
+              const finalValue = numberElement.textContent;
+              let currentValue = 0;
+              const increment = finalValue.includes('+') ? 500 : 
+                             finalValue.includes('%') ? 1 : 1000;
+              
+              const timer = setInterval(() => {
+                if (currentValue < parseFloat(finalValue)) {
+                  currentValue += increment;
+                  if (finalValue.includes('+')) {
+                    numberElement.textContent = Math.floor(currentValue) + '+';
+                  } else if (finalValue.includes('%')) {
+                    numberElement.textContent = Math.floor(currentValue) + '%';
+                  } else {
+                    numberElement.textContent = Math.floor(currentValue).toLocaleString();
+                  }
+                } else {
+                  numberElement.textContent = finalValue;
+                  clearInterval(timer);
+                }
+              }, 50);
+            }
+            statsObserver.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      // 观察所有统计数据
+      document.querySelectorAll('.usa-stat').forEach(stat => {
+        statsObserver.observe(stat);
+      });
+
+      // 添加卡片悬停效果
+      document.querySelectorAll('.usa-card').forEach(card => {
+        card.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateY(-4px)';
+          this.style.transition = 'transform 0.3s ease';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+          this.style.transform = 'translateY(0)';
+        });
+      });
+    });
+  </script>
 </body>
 </html>

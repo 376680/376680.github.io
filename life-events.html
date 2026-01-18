@@ -4,18 +4,19 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>生活事件 - 小鼠帝国总务管理局</title>
-<link rel="stylesheet" media="all" href="css/style1.css">
-<link rel="stylesheet" media="all" href="css/style2.css">
+<link rel="stylesheet" href="css/style1.css">
+<link rel="stylesheet" href="css/style2.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
+  <!-- 官方横幅 -->
   <div class="usa-banner" aria-label="官方网站标识" id="usagov-banner">
     <div class="usa-accordion">
       <header class="usa-banner__header">
         <div class="usa-banner__inner">
           <div class="grid-col-auto">
-            <i class="fas fa-flag" style="font-size: 20px; color: #007bff;" aria-hidden="true"></i>
+            <i class="fas fa-flag" style="font-size: 20px; color: #1E3A8A;" aria-hidden="true"></i>
           </div>
           <div class="grid-col-fill tablet:grid-col-auto">
             <p class="usa-banner__header-text">
@@ -29,6 +30,7 @@
 
   <div class="usa-overlay"></div>
 
+  <!-- 导航头部 -->
   <header class="usa-header usa-header--extended" role="banner">
     <div class="usa-navbar">
       <div class="usa-logo" id="extended-logo">
@@ -48,7 +50,7 @@
           <div class="usa-nav__secondary-links">
             <div>
               <span id="top-phone" class="usa-nav__secondary-item" data-contact-callout="visible">
-                <a href="#" style="white-space: nowrap;">政府服务热线：1-844-MOUSE-GOV</a>
+                <a href="#" style="white-space: nowrap;">政府服务热线：1-844-小鼠-政府</a>
               </span>
             </div>
           </div>
@@ -57,123 +59,405 @@
     </div>
   </header>
 
-  <div class="banner-wrapper">
-    <div class="banner-div" style="background-image: url(images/Homepage_Banner.png.webp);"></div>
-  </div>
-
-  <div class="welcome-box-wrapper">
-    <div class="welcome-box">
-      <h1 id="skip-to-h1" style="color: #ffffff;">
-        生活事件
-      </h1>
-      <p style="color: #ffffff;">
-        小鼠帝国总务管理局为您提供全面的生活事件服务，包括发现政府福利和服务，帮助您和家人度过生活的每个阶段。
-      </p>
+  <!-- 主导航 -->
+  <nav aria-label="主要导航" class="usa-nav">
+    <div class="usa-nav__inner">
+      <button class="usa-nav__close">
+        <i class="fas fa-times"></i>
+      </button>
+      <ul class="usa-nav__primary usa-accordion">
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="index.html">
+            <span>首页</span>
+          </a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="personal-services.html">
+            <span>个人服务</span>
+          </a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="business-services.html">
+            <span>商业服务</span>
+          </a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="health-services.html">
+            <span>健康服务</span>
+          </a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="housing-services.html">
+            <span>住房服务</span>
+          </a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="jobs-services.html">
+            <span>就业服务</span>
+          </a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="immigration-services.html">
+            <span>移民服务</span>
+          </a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="travel-services.html">
+            <span>旅游服务</span>
+          </a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="education-services.html">
+            <span>教育服务</span>
+          </a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="tax-services.html">
+            <span>税务服务</span>
+          </a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="disaster-services.html">
+            <span>灾难服务</span>
+          </a>
+        </li>
+        <li class="usa-nav__primary-item active">
+          <a class="usa-nav__link" href="life-events.html">
+            <span>生活事件</span>
+          </a>
+        </li>
+      </ul>
     </div>
-  </div>
+  </nav>
 
-  <main class="main-content usa-layout-docs no-footer-gap" id="main-content">
-    <div class="grid-container usa-section">
-      <div class="usa-accordion" style="margin-top: 2rem;">
-        <h2 class="usa-accordion__heading">
-          <button class="usa-accordion__button" aria-expanded="false" aria-controls="acc1">
-            <span class="usa-accordion__button-text">出生</span>
-            <span class="usa-accordion__icon" aria-hidden="true"></span>
+  <!-- 英雄区域 -->
+  <section class="usa-hero" aria-label="生活事件介绍">
+    <div class="grid-container">
+      <div class="usa-hero__callout">
+        <h1 class="usa-hero__heading">
+          <span class="usa-hero__heading--alt">生活事件</span>
+          陪伴您度过人生的每个重要时刻
+        </h1>
+        <p class="usa-hero__description">
+          小鼠帝国总务管理局为您提供全面的生活事件服务，包括发现政府福利和服务，帮助您和家人度过生活的每个阶段。从新生到退休，我们始终陪伴在您身边。
+        </p>
+        <div class="hero-actions">
+          <button class="usa-button" onclick="scrollToServices()">
+            <i class="fas fa-life-ring"></i>
+            开始探索
           </button>
-        </h2>
-        <div id="acc1" class="usa-accordion__content usa-prose">
-          <p>了解出生相关的政府服务和福利。我们提供新生儿登记和育儿支持。</p>
-          <ul>
-            <li>出生登记</li>
-            <li>出生证明申请</li>
-            <li>育儿补贴</li>
-            <li>儿童健康检查</li>
-          </ul>
-        </div>
-
-        <h2 class="usa-accordion__heading">
-          <button class="usa-accordion__button" aria-expanded="false" aria-controls="acc2">
-            <span class="usa-accordion__button-text">教育</span>
-            <span class="usa-accordion__icon" aria-hidden="true"></span>
+          <button class="usa-button usa-button--outline" onclick="openLifePlanner()">
+            <i class="fas fa-calendar-alt"></i>
+            生活规划
           </button>
-        </h2>
-        <div id="acc2" class="usa-accordion__content usa-prose">
-          <p>了解教育相关的政府服务和福利。我们提供教育支持和学生资助。</p>
-          <ul>
-            <li>学校入学</li>
-            <li>学生资助</li>
-            <li>奖学金申请</li>
-            <li>教育资源</li>
-          </ul>
-        </div>
-
-        <h2 class="usa-accordion__heading">
-          <button class="usa-accordion__button" aria-expanded="false" aria-controls="acc3">
-            <span class="usa-accordion__button-text">就业</span>
-            <span class="usa-accordion__icon" aria-hidden="true"></span>
-          </button>
-        </h2>
-        <div id="acc3" class="usa-accordion__content usa-prose">
-          <p>了解就业相关的政府服务和福利。我们提供就业支持和职业培训。</p>
-          <ul>
-            <li>就业机会</li>
-            <li>职业培训</li>
-            <li>失业救济</li>
-            <li>职业规划</li>
-          </ul>
-        </div>
-
-        <h2 class="usa-accordion__heading">
-          <button class="usa-accordion__button" aria-expanded="false" aria-controls="acc4">
-            <span class="usa-accordion__button-text">婚姻</span>
-            <span class="usa-accordion__icon" aria-hidden="true"></span>
-          </button>
-        </h2>
-        <div id="acc4" class="usa-accordion__content usa-prose">
-          <p>了解婚姻相关的政府服务和福利。我们提供婚姻登记和家庭支持。</p>
-          <ul>
-            <li>婚姻登记</li>
-            <li>婚姻证明</li>
-            <li>家庭咨询</li>
-            <li>婚姻法律咨询</li>
-          </ul>
-        </div>
-
-        <h2 class="usa-accordion__heading">
-          <button class="usa-accordion__button" aria-expanded="false" aria-controls="acc5">
-            <span class="usa-accordion__button-text">退休</span>
-            <span class="usa-accordion__icon" aria-hidden="true"></span>
-          </button>
-        </h2>
-        <div id="acc5" class="usa-accordion__content usa-prose">
-          <p>了解退休相关的政府服务和福利。我们提供退休规划和养老金支持。</p>
-          <ul>
-            <li>退休申请</li>
-            <li>养老金计算</li>
-            <li>退休医疗</li>
-            <li>退休社区</li>
-          </ul>
-        </div>
-
-        <h2 class="usa-accordion__heading">
-          <button class="usa-accordion__button" aria-expanded="false" aria-controls="acc6">
-            <span class="usa-accordion__button-text">死亡</span>
-            <span class="usa-accordion__icon" aria-hidden="true"></span>
-          </button>
-        </h2>
-        <div id="acc6" class="usa-accordion__content usa-prose">
-          <p>了解死亡相关的政府服务和福利。我们提供死亡登记和丧葬支持。</p>
-          <ul>
-            <li>死亡登记</li>
-            <li>死亡证明</li>
-            <li>丧葬补助</li>
-            <li>遗产处理</li>
-          </ul>
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- 主要内容 -->
+  <main class="main-content usa-layout-docs no-footer-gap" id="main-content">
+    <!-- 生活事件概览 -->
+    <section class="services-overview">
+      <div class="grid-container">
+        <div class="section-header">
+          <h2 class="section-title">生活事件概览</h2>
+          <p class="section-description">
+            我们提供全方位的生活事件服务，陪伴您度过人生的每个重要时刻
+          </p>
+        </div>
+        
+        <div class="services-grid">
+          <div class="service-card" data-service="birth">
+            <div class="service-icon">
+              <i class="fas fa-baby"></i>
+            </div>
+            <h3 class="service-title">出生与育儿</h3>
+            <p class="service-description">从新生儿登记到育儿支持，为新生命提供全面保障</p>
+            <div class="service-features">
+              <span class="feature-tag">出生登记</span>
+              <span class="feature-tag">育儿补贴</span>
+              <span class="feature-tag">健康检查</span>
+            </div>
+            <button class="service-button" onclick="openServiceModal('birth')">
+              了解更多 <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="service-card" data-service="education">
+            <div class="service-icon">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <h3 class="service-title">教育成长</h3>
+            <p class="service-description">从学前教育到高等教育，为学习和成长提供支持</p>
+            <div class="service-features">
+              <span class="feature-tag">入学申请</span>
+              <span class="feature-tag">学生资助</span>
+              <span class="feature-tag">奖学金</span>
+            </div>
+            <button class="service-button" onclick="openServiceModal('education')">
+              了解更多 <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="service-card" data-service="career">
+            <div class="service-icon">
+              <i class="fas fa-briefcase"></i>
+            </div>
+            <h3 class="service-title">职业发展</h3>
+            <p class="service-description">从求职到职业培训，为职业生涯提供全方位支持</p>
+            <div class="service-features">
+              <span class="feature-tag">就业指导</span>
+              <span class="feature-tag">职业培训</span>
+              <span class="feature-tag">创业支持</span>
+            </div>
+            <button class="service-button" onclick="openServiceModal('career')">
+              了解更多 <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="service-card" data-service="marriage">
+            <div class="service-icon">
+              <i class="fas fa-heart"></i>
+            </div>
+            <h3 class="service-title">婚姻家庭</h3>
+            <p class="service-description">从婚姻登记到家庭支持，为幸福生活保驾护航</p>
+            <div class="service-features">
+              <span class="feature-tag">婚姻登记</span>
+              <span class="feature-tag">家庭咨询</span>
+              <span class="feature-tag">法律援助</span>
+            </div>
+            <button class="service-button" onclick="openServiceModal('marriage')">
+              了解更多 <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="service-card" data-service="health">
+            <div class="service-icon">
+              <i class="fas fa-user-md"></i>
+            </div>
+            <h3 class="service-title">健康保障</h3>
+            <p class="service-description">从日常保健到医疗支持，为健康人生提供保障</p>
+            <div class="service-features">
+              <span class="feature-tag">医疗保健</span>
+              <span class="feature-tag">健康检查</span>
+              <span class="feature-tag">保险服务</span>
+            </div>
+            <button class="service-button" onclick="openServiceModal('health')">
+              了解更多 <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="service-card" data-service="retirement">
+            <div class="service-icon">
+              <i class="fas fa-couch"></i>
+            </div>
+            <h3 class="service-title">退休生活</h3>
+            <p class="service-description">从退休规划到养老支持，为金色晚年提供保障</p>
+            <div class="service-features">
+              <span class="feature-tag">退休规划</span>
+              <span class="feature-tag">养老金</span>
+              <span class="feature-tag">养老服务</span>
+            </div>
+            <button class="service-button" onclick="openServiceModal('retirement')">
+              了解更多 <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 生活阶段指导 -->
+    <section class="life-stages-section">
+      <div class="grid-container">
+        <div class="section-header">
+          <h2 class="section-title">生活阶段指导</h2>
+          <p class="section-description">
+            根据您所处的生活阶段，提供个性化的服务和建议
+          </p>
+        </div>
+        
+        <div class="life-stages-timeline">
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <i class="fas fa-baby"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>新生儿期 (0-2岁)</h3>
+              <p>为新生儿提供健康保障和成长支持</p>
+              <div class="timeline-actions">
+                <a href="#" class="timeline-link">出生登记</a>
+                <a href="#" class="timeline-link">育儿指导</a>
+                <a href="#" class="timeline-link">健康检查</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <i class="fas fa-child"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>儿童期 (3-12岁)</h3>
+              <p>为儿童提供教育资源和成长环境</p>
+              <div class="timeline-actions">
+                <a href="#" class="timeline-link">学前教育</a>
+                <a href="#" class="timeline-link">基础教育</a>
+                <a href="#" class="timeline-link">兴趣培养</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <i class="fas fa-user-graduate"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>青少年期 (13-18岁)</h3>
+              <p>为青少年提供教育支持和职业规划</p>
+              <div class="timeline-actions">
+                <a href="#" class="timeline-link">中学教育</a>
+                <a href="#" class="timeline-link">职业指导</a>
+                <a href="#" class="timeline-link">心理健康</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>成年期 (19-60岁)</h3>
+              <p>为成年人提供就业支持和生活服务</p>
+              <div class="timeline-actions">
+                <a href="#" class="timeline-link">高等教育</a>
+                <a href="#" class="timeline-link">就业服务</a>
+                <a href="#" class="timeline-link">创业支持</a>
+              </div>
+            </div>
+          </div>
+          
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <i class="fas fa-user-clock"></i>
+            </div>
+            <div class="timeline-content">
+              <h3>老年期 (60岁以上)</h3>
+              <p>为老年人提供养老服务和健康保障</p>
+              <div class="timeline-actions">
+                <a href="#" class="timeline-link">退休规划</a>
+                <a href="#" class="timeline-link">养老服务</a>
+                <a href="#" class="timeline-link">医疗保健</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 特色服务 -->
+    <section class="featured-services">
+      <div class="grid-container">
+        <div class="section-header">
+          <h2 class="section-title">特色服务</h2>
+          <p class="section-description">
+            专为生活事件设计的特色服务，让您的生活更加便捷
+          </p>
+        </div>
+        
+        <div class="featured-grid">
+          <div class="featured-card">
+            <div class="featured-icon">
+              <i class="fas fa-calendar-check"></i>
+            </div>
+            <h3>生活规划师</h3>
+            <p>专业的生活规划师为您制定个性化的人生规划，帮助您更好地安排生活</p>
+            <a href="#" class="featured-link">预约规划师 <i class="fas fa-arrow-right"></i></a>
+          </div>
+          
+          <div class="featured-card">
+            <div class="featured-icon">
+              <i class="fas fa-bell"></i>
+            </div>
+            <h3>重要提醒</h3>
+            <p>智能提醒系统，及时提醒您重要的人生节点和相关服务申请时间</p>
+            <a href="#" class="featured-link">设置提醒 <i class="fas fa-arrow-right"></i></a>
+          </div>
+          
+          <div class="featured-card">
+            <div class="featured-icon">
+              <i class="fas fa-handshake"></i>
+            </div>
+            <h3>一站式服务</h3>
+            <p>整合所有相关服务，为您提供一站式的生活事件解决方案</p>
+            <a href="#" class="featured-link">体验服务 <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section class="faq-section">
+      <div class="grid-container">
+        <div class="section-header">
+          <h2 class="section-title">常见问题</h2>
+          <p class="section-description">
+            解答您关于生活事件服务的最常见问题
+          </p>
+        </div>
+        
+        <div class="usa-accordion">
+          <h2 class="usa-accordion__heading">
+            <button class="usa-accordion__button" aria-expanded="false" aria-controls="faq1">
+              如何申请育儿补贴？
+            </button>
+          </h2>
+          <div id="faq1" class="usa-accordion__content usa-prose">
+            <p>申请育儿补贴需要满足以下条件：1）新生儿父母或法定监护人；2）小鼠帝国常住居民；3）符合收入标准。申请流程包括：在线提交申请、上传相关证明材料、等待审核、补贴发放。补贴金额根据家庭收入和孩子年龄确定，一般每月200-500奶酪币。</p>
+          </div>
+
+          <h2 class="usa-accordion__heading">
+            <button class="usa-accordion__button" aria-expanded="false" aria-controls="faq2">
+              学生资助包括哪些内容？
+            </button>
+          </h2>
+          <div id="faq2" class="usa-accordion__content usa-prose">
+            <p>学生资助涵盖多个方面：1）学费减免：根据家庭经济状况提供部分或全额学费减免；2）生活补贴：每月提供300-800奶酪币的生活补贴；3）教材资助：免费提供必要的教材和学习用品；4）住宿补贴：为住校学生提供住宿费用补贴；5）紧急救助：为遇到突发困难的学生提供紧急经济援助。</p>
+          </div>
+
+          <h2 class="usa-accordion__heading">
+            <button class="usa-accordion__button" aria-expanded="false" aria-controls="faq3">
+              职业培训证书是否被认可？
+            </button>
+          </h2>
+          <div id="faq3" class="usa-accordion__content usa-prose">
+            <p>小鼠帝国政府颁发的职业培训证书具有官方认可，在全国范围内通用。证书涵盖多个行业领域，包括奶酪制作、洞穴挖掘、安全管理、数字营销等。证书分为初级、中级、高级三个等级，有效期为5年，到期后可申请更新。持证者在就业市场上具有竞争优势，许多企业优先考虑持证者。</p>
+          </div>
+
+          <h2 class="usa-accordion__heading">
+            <button class="usa-accordion__button" aria-expanded="false" aria-controls="faq4">
+              婚姻登记需要准备什么材料？
+            </button>
+          </h2>
+          <div id="faq4" class="usa-accordion__content usa-prose">
+            <p>婚姻登记需要准备以下材料：1）双方有效身份证件原件及复印件；2）户口本原件及复印件；3）近期2寸合影照片3张；4）未婚证明或离婚证明（如适用）；5）健康检查报告；6）婚姻登记申请表。如一方为外国公民，还需提供有效护照和居留许可。所有材料需提前准备，确保信息准确无误。</p>
+          </div>
+
+          <h2 class="usa-accordion__heading">
+            <button class="usa-accordion__button" aria-expanded="false" aria-controls="faq5">
+              退休规划服务包括哪些内容？
+            </button>
+          </h2>
+          <div id="faq5" class="usa-accordion__content usa-prose">
+            <p>退休规划服务涵盖：1）养老金计算：根据您的工作年限和缴费情况计算预期养老金；2）退休时间规划：帮助您确定最佳退休时间；3）医疗保障：介绍退休后医疗保险政策；4）生活安排：提供养老社区信息和居家养老建议；5）法律咨询：解答退休相关的法律问题；6）心理调适：提供退休心理准备和适应指导。我们的专业顾问将为您制定个性化的退休规划方案。</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <!-- 页脚 -->
   <footer class="usa-footer usa-footer--big" role="contentinfo">
     <div class="grid-container usa-footer__return-to-top">
       <a href="#">返回顶部</a>
@@ -189,9 +473,126 @@
     </div>
   </footer>
 
-<script src="js/newFooter.js" defer="defer"></script>
-<script src="js/main.js"></script>
-<script src="js/accordion.js"></script>
+  <!-- 服务详情模态框 -->
+  <div id="serviceModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modalTitle">服务详情</h2>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- 动态内容 -->
+      </div>
+      <div class="modal-footer">
+        <button class="usa-button usa-button--outline" onclick="closeServiceModal()">关闭</button>
+        <button class="usa-button usa-button--primary" onclick="startLifeService()">开始服务</button>
+      </div>
+    </div>
+  </div>
 
+  <!-- 生活规划模态框 -->
+  <div id="lifePlannerModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>生活事件规划器</h2>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <form id="lifePlannerForm" class="calculator-form">
+          <div class="form-group">
+            <label for="currentAge">当前年龄</label>
+            <input type="number" id="currentAge" class="usa-input" min="0" max="120" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="lifeStage">当前生活阶段</label>
+            <select id="lifeStage" class="usa-select" required>
+              <option value="">请选择生活阶段</option>
+              <option value="newborn">新生儿期</option>
+              <option value="childhood">儿童期</option>
+              <option value="teenager">青少年期</option>
+              <option value="adult">成年期</option>
+              <option value="senior">老年期</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="familyStatus">家庭状况</label>
+            <select id="familyStatus" class="usa-select" required>
+              <option value="">请选择家庭状况</option>
+              <option value="single">单身</option>
+              <option value="married">已婚</option>
+              <option value="married_with_children">已婚有子女</option>
+              <option value="divorced">离异</option>
+              <option value="widowed">丧偶</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label>您关注的生活事件（可多选）</label>
+            <div class="checkbox-group">
+              <label class="checkbox-option">
+                <input type="checkbox" name="lifeEvents" value="education">
+                <span class="checkbox-custom"></span>
+                教育相关
+              </label>
+              <label class="checkbox-option">
+                <input type="checkbox" name="lifeEvents" value="employment">
+                <span class="checkbox-custom"></span>
+                就业相关
+              </label>
+              <label class="checkbox-option">
+                <input type="checkbox" name="lifeEvents" value="health">
+                <span class="checkbox-custom"></span>
+                健康相关
+              </label>
+              <label class="checkbox-option">
+                <input type="checkbox" name="lifeEvents" value="housing">
+                <span class="checkbox-custom"></span>
+                住房相关
+              </label>
+              <label class="checkbox-option">
+                <input type="checkbox" name="lifeEvents" value="retirement">
+                <span class="checkbox-custom"></span>
+                退休相关
+              </label>
+            </div>
+          </div>
+          
+          <button type="submit" class="usa-button usa-button--primary">
+            <i class="fas fa-magic"></i>
+            生成规划
+          </button>
+        </form>
+        
+        <div id="plannerResult" class="result-container" style="display: none;">
+          <h3>个性化生活规划</h3>
+          <div class="result-grid">
+            <div class="result-item">
+              <span class="result-label">近期目标：</span>
+              <span id="shortTermGoals" class="result-value">-</span>
+            </div>
+            <div class="result-item">
+              <span class="result-label">中期规划：</span>
+              <span id="mediumTermGoals" class="result-value">-</span>
+            </div>
+            <div class="result-item">
+              <span class="result-label">长期愿景：</span>
+              <span id="longTermGoals" class="result-value">-</span>
+            </div>
+            <div class="result-item">
+              <span class="result-label">推荐服务：</span>
+              <span id="recommendedServices" class="result-value">-</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/accordion.js"></script>
+  <script src="js/modifyMobileNav.js"></script>
+  <script src="js/life-events.js"></script>
 </body>
 </html>

@@ -4,178 +4,988 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>身份服务 - 小鼠帝国总务管理局</title>
-<link rel="stylesheet" media="all" href="css/style1.css">
-<link rel="stylesheet" media="all" href="css/style2.css">
+<meta name="description" content="小鼠帝国身份部提供尾巴身份证、奶酪护照、洞穴通行证、胡须驾驶证等创新身份认证服务，支持千鼠万店身份识别计划">
+<meta name="keywords" content="小鼠帝国身份,尾巴身份证,奶酪护照,洞穴通行证,胡须驾驶证,身份认证,千鼠万店">
+<link rel="stylesheet" href="css/style1.css">
+<link rel="stylesheet" href="css/style2.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-  <div class="usa-banner" aria-label="官方网站标识" id="usagov-banner">
+  <!-- 官方横幅 -->
+  <section class="usa-banner" aria-label="Official government website">
     <div class="usa-accordion">
       <header class="usa-banner__header">
         <div class="usa-banner__inner">
           <div class="grid-col-auto">
-            <i class="fas fa-flag" style="font-size: 20px; color: #007bff;" aria-hidden="true"></i>
+            <img class="usa-banner__header-flag" src="https://cdnjs.cloudflare.com/ajax/libs/uswds/3.0.0/img/us_flag_small.png" alt="U.S. flag">
           </div>
           <div class="grid-col-fill tablet:grid-col-auto">
-            <p class="usa-banner__header-text">
-              小鼠帝国官方政府网站
-            </p>
+            <p class="usa-banner__header-text">小鼠帝国官方政府网站</p>
           </div>
         </div>
       </header>
     </div>
-  </div>
+  </section>
 
-  <div class="usa-overlay"></div>
-
-  <header class="usa-header usa-header--extended" role="banner">
+  <!-- 导航头部 -->
+  <header class="usa-header usa-header--extended">
     <div class="usa-navbar">
       <div class="usa-logo" id="extended-logo">
-        <em class="usa-logo-text">
+        <em class="usa-logo__text">
           <a href="index.html" title="小鼠帝国总务管理局">
-            <span style="font-size: 24px; font-weight: bold; color: #1b1b1b; text-decoration: none; display: flex; align-items: center; gap: 10px;">
-              <img src="images/logo.png" alt="小鼠帝国总务管理局" style="height: 32px; width: auto;">
-              <span>小鼠帝国总务管理局</span>
+            <span class="logo-container">
+              <img src="images/logo.png" alt="小鼠帝国总务管理局" class="logo-image">
+              <span class="logo-text">小鼠帝国总务管理局</span>
             </span>
           </a>
         </em>
       </div>
-
-      <div class="navbar-right">
-        <button class="usa-menu-btn">导航菜单</button>
+      <button class="usa-menu-btn">菜单</button>
+    </div>
+    <nav aria-label="Primary navigation" class="usa-nav">
+      <div class="usa-nav__inner">
+        <button class="usa-nav__close">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="usa-nav__primary usa-accordion">
+          <li class="usa-nav__primary-item">
+            <a href="index.html" class="usa-nav__link"><span>首页</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="personal-services.html" class="usa-nav__link"><span>个人服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="business-services.html" class="usa-nav__link"><span>企业服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="health-services.html" class="usa-nav__link"><span>医疗服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="housing-services.html" class="usa-nav__link"><span>住房服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="jobs-services.html" class="usa-nav__link"><span>就业服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="immigration-services.html" class="usa-nav__link"><span>移民服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="travel-services.html" class="usa-nav__link"><span>旅游服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="education-services.html" class="usa-nav__link"><span>教育服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="disaster-services.html" class="usa-nav__link"><span>灾难援助</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="tax-services.html" class="usa-nav__link"><span>税务服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="identity-services.html" class="usa-nav__link usa-current"><span>身份服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="complaints-services.html" class="usa-nav__link"><span>投诉服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="scams-services.html" class="usa-nav__link"><span>欺诈防范</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="small-business-services.html" class="usa-nav__link"><span>小企业服务</span></a>
+          </li>
+        </ul>
         <div class="usa-nav__secondary">
-          <div class="usa-nav__secondary-links">
-            <div>
-              <span id="top-phone" class="usa-nav__secondary-item" data-contact-callout="visible">
-                <a href="#" style="white-space: nowrap;">政府服务热线：1-844-MOUSE-GOV</a>
-              </span>
+          <ul class="usa-nav__secondary-links">
+            <li class="usa-nav__secondary-item">
+              <a href="tel:1-844-小鼠-政府">
+                <span>政府服务热线：1-844-小鼠-政府</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- 英雄区域 -->
+    <section class="usa-hero" aria-label="Introduction">
+      <div class="usa-hero__callout">
+        <h1 class="usa-hero__heading"><span class="usa-hero__heading--alt">身份服务</span>小鼠帝国身份认证新纪元</h1>
+        <p class="usa-hero__description">从尾巴身份证到奶酪护照，从洞穴通行证到胡须驾驶证，小鼠帝国身份部为您提供最具创新性的身份认证服务。加入我们的千鼠万店身份识别计划，成为下一代身份认证专家！</p>
+        <div class="usa-hero__button-group">
+          <a class="usa-button usa-button--primary" href="#identity-services">探索创新证件</a>
+          <a class="usa-button usa-button--outline" href="#biometric-programs">千鼠万才认证</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 身份服务概述 -->
+    <section class="usa-section" id="overview">
+      <div class="grid-container">
+        <div class="usa-summary-box">
+          <div class="usa-summary-box__body">
+            <h3 class="usa-summary-box__heading">小鼠帝国身份服务概览</h3>
+            <div class="usa-summary-box__text">
+              <p>我们提供小鼠世界最具创新性的身份认证服务体系，涵盖尾巴生物识别、奶酪消费认证、洞穴居住证明等前沿领域。通过我们的服务，您将获得：</p>
+              <ul class="usa-list">
+                <li>尾巴生物特征身份认证</li>
+                <li>奶酪消费行为身份验证</li>
+                <li>洞穴居住地理身份标识</li>
+                <li>胡须造型美学身份识别</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 统计数据 -->
+        <div class="grid-row grid-gap-lg margin-top-6">
+          <div class="tablet:grid-col-3">
+            <div class="usa-stat">
+              <div class="usa-stat__number">199,999+</div>
+              <div class="usa-stat__label">尾巴身份证发放</div>
+            </div>
+          </div>
+          <div class="tablet:grid-col-3">
+            <div class="usa-stat">
+              <div class="usa-stat__number">125,000+</div>
+              <div class="usa-stat__label">奶酪护照签发</div>
+            </div>
+          </div>
+          <div class="tablet:grid-col-3">
+              <div class="usa-stat">
+                <div class="usa-stat__number">180%</div>
+              <div class="usa-stat__label">胡须驾驶证增长率</div>
+            </div>
+          </div>
+          <div class="tablet:grid-col-3">
+            <div class="usa-stat">
+              <div class="usa-stat__number">24/7</div>
+              <div class="usa-stat__label">洞穴通行证服务</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 创新身份认证服务 -->
+    <section class="usa-section usa-section--dark" id="identity-services">
+      <div class="grid-container">
+        <h2 class="font-heading-xl margin-top-0">创新身份认证服务</h2>
+        <p class="usa-intro">探索小鼠世界最前沿的身份认证技术，从传统的尾巴识别到创新的奶酪行为分析，每一种认证方式都是为小鼠帝国量身定制的身份创新。</p>
+        
+        <div class="grid-row grid-gap-lg margin-top-4">
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">尾巴身份证认证</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>成为尾巴身份证专业持有人，通过尾巴长度、粗度、弹性、摆动频率等生物特征进行身份认证。掌握尾巴生物识别、身份验证、安全防伪的专业技能。</p>
+                  <ul class="usa-list">
+                    <li>尾巴生物特征采集</li>
+                    <li>身份验证技术</li>
+                    <li>安全防伪措施</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openIdentityModal('tail-id')">申请认证</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">奶酪护照认证</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>根据奶酪消费偏好、品尝能力、营养需求等行为特征进行身份认证。掌握奶酪行为分析、身份识别、消费验证的专业技能。</p>
+                  <ul class="usa-list">
+                    <li>奶酪消费行为分析</li>
+                    <li>身份识别技术</li>
+                    <li>消费验证系统</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openIdentityModal('cheese-passport')">护照认证</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">洞穴通行证认证</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>通过洞穴居住历史、地理偏好、环境适应性等地理特征进行身份认证。掌握地理身份识别、环境验证、居住证明的专业技能。</p>
+                  <ul class="usa-list">
+                    <li>地理身份识别</li>
+                    <li>环境验证技术</li>
+                    <li>居住证明系统</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openIdentityModal('cave-pass')">通行证认证</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 千鼠万才生物识别计划 -->
+    <section class="usa-section" id="biometric-programs">
+      <div class="grid-container">
+        <h2 class="font-heading-xl margin-top-0">千鼠万才生物识别计划</h2>
+        <p class="usa-intro">加入小鼠帝国历史上最雄心勃勃的生物识别计划！我们致力于在五年内为一万只小鼠建立完整的生物识别档案，从尾巴纹图谱到奶酪味觉基因，从洞穴居住指纹到胡须造型特征。</p>
+        
+        <div class="grid-row grid-gap-lg margin-top-4">
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">尾巴纹图谱认证</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>建立个人专属的尾巴纹图谱数据库，通过尾巴毛发纹理、色素分布、生长模式进行身份识别。培养尾巴生物识别专家和技术工程师。</p>
+                  <ul class="usa-list">
+                    <li>尾巴纹图谱采集</li>
+                    <li>生物特征分析</li>
+                    <li>身份数据库建立</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openBiometricModal('tail-print')">图谱认证</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">奶酪味觉基因认证</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>分析个人奶酪味觉基因特征，通过奶酪偏好、味觉敏感度、营养需求进行身份识别。培养奶酪基因分析师和味觉专家。</p>
+                  <ul class="usa-list">
+                    <li>味觉基因分析</li>
+                    <li>奶酪偏好识别</li>
+                    <li>营养需求评估</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openBiometricModal('cheese-gene')">基因认证</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">胡须造型特征认证</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>建立个人胡须造型特征档案，通过胡须密度、长度、颜色、造型偏好进行身份识别。培养胡须造型分析师和美学专家。</p>
+                  <ul class="usa-list">
+                    <li>胡须特征采集</li>
+                    <li>造型偏好分析</li>
+                    <li>美学特征识别</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openBiometricModal('whisker-feature')">特征认证</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 创新身份验证研究中心 -->
+    <section class="usa-section usa-section--dark" id="verification-centers">
+      <div class="grid-container">
+        <h2 class="font-heading-xl margin-top-0">创新身份验证研究中心</h2>
+        <p class="usa-intro">为小鼠身份认证提供世界顶级的研究设施和技术支持，从尾巴生物识别实验室到奶酪行为分析中心，从洞穴地理信息基地到胡须造型识别工坊，我们为每一位小鼠身份认证创造最佳的技术环境。</p>
+        
+        <div class="grid-row grid-gap-lg margin-top-4">
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">尾巴生物识别实验室</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>世界领先的尾巴生物识别实验室，配备最先进的尾巴扫描设备、纹图谱分析系统和生物特征数据库。为尾巴身份认证提供全方位技术支持。</p>
+                  <ul class="usa-list">
+                    <li>高精度尾巴扫描设备</li>
+                    <li>纹图谱分析系统</li>
+                    <li>生物特征数据库</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openLabModal('tail-biometric-lab')">实验室认证</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">奶酪行为分析中心</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>国际一流的奶酪行为分析中心，拥有先进的行为监测设备、味觉测试系统和消费行为数据库。为奶酪身份认证提供强大技术支撑。</p>
+                  <ul class="usa-list">
+                    <li>行为监测设备</li>
+                    <li>味觉测试系统</li>
+                    <li>消费行为数据库</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openLabModal('cheese-behavior-lab')">分析中心</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">洞穴地理信息基地</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>独特的洞穴地理信息基地，提供精确的地理定位系统、居住环境监测设备和地理信息数据库。为洞穴身份认证提供专业平台。</p>
+                  <ul class="usa-list">
+                    <li>精确地理定位系统</li>
+                    <li>居住环境监测设备</li>
+                    <li>地理信息数据库</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openLabModal('cave-geographic-lab')">地理基地</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 洞穴身份适应性评估 -->
+    <section class="usa-section" id="identity-assessment">
+      <div class="grid-container">
+        <h2 class="font-heading-xl margin-top-0">洞穴身份适应性评估服务</h2>
+        <p class="usa-intro">为小鼠公民提供专业的身份适应性评估，确保每一位小鼠都能找到最适合自己身份特征和发展需求的认证方式。从尾巴适应性到奶酪偏好匹配，从洞穴居住适宜性到胡须造型协调性，我们为您进行全方位的身份适配分析。</p>
+        
+        <div class="grid-row grid-gap-lg margin-top-4">
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">尾巴身份适应性评估师</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>成为专业的尾巴身份适应性评估师，为小鼠公民提供尾巴特征、生物识别、身份认证的专业评估服务。掌握适应性评估、认证建议、发展规划的专业技术。</p>
+                  <ul class="usa-list">
+                    <li>尾巴特征适应性评估</li>
+                    <li>生物识别认证建议</li>
+                    <li>身份发展规划</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openAssessmentModal('tail-identity-assessment')">评估认证</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">奶酪身份匹配分析师</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>成为奶酪身份匹配分析专家，为小鼠公民提供奶酪偏好、消费行为、身份验证的专业分析服务。掌握匹配分析、认证优化、行为建议的专业技术。</p>
+                  <ul class="usa-list">
+                    <li>奶酪偏好匹配分析</li>
+                    <li>消费行为认证优化</li>
+                    <li>身份验证行为建议</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openAssessmentModal('cheese-identity-analysis')">分析认证</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">洞穴身份协调测评员</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>成为洞穴身份协调测评专家，为小鼠公民提供居住环境、地理特征、身份标识的专业测评服务。掌握协调性测评、身份标识、地理认证的专业技术。</p>
+                  <ul class="usa-list">
+                    <li>居住环境协调性测评</li>
+                    <li>地理特征身份标识</li>
+                    <li>身份认证地理标识</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openAssessmentModal('cave-identity-coordination')">测评认证</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 胡须驾驶证认证 -->
+    <section class="usa-section usa-section--dark" id="driver-license">
+      <div class="grid-container">
+        <h2 class="font-heading-xl margin-top-0">胡须驾驶证认证服务</h2>
+        <p class="usa-intro">为小鼠驾驶员提供专业的胡须驾驶证认证服务，通过胡须造型特征、感官能力、驾驶适应性进行驾驶资格认证。从胡须造型协调性到感官敏锐度评估，从驾驶行为分析到安全能力测试，我们为每一位小鼠驾驶员提供全方位的认证支持。</p>
+        
+        <div class="grid-row grid-gap-lg margin-top-4">
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">胡须造型驾驶认证</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>通过胡须造型特征进行驾驶身份认证，评估胡须对驾驶视野、感官判断、操作协调性的影响。掌握造型认证、驾驶适应性评估、安全能力测试的专业技能。</p>
+                  <ul class="usa-list">
+                    <li>胡须造型特征认证</li>
+                    <li>驾驶视野适应性评估</li>
+                    <li>感官判断能力测试</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openLicenseModal('whisker-driving')">驾驶认证</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">感官能力驾驶测试</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>通过胡须感官能力进行驾驶安全测试，评估触觉敏感度、空间感知能力、危险识别能力。掌握感官测试、安全评估、驾驶行为分析的专业技能。</p>
+                  <ul class="usa-list">
+                    <li>胡须感官能力测试</li>
+                    <li>空间感知安全评估</li>
+                    <li>危险识别能力分析</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openLicenseModal('sensory-driving')">测试认证</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">驾驶行为特征认证</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>通过驾驶行为特征进行身份认证，分析驾驶习惯、操作特征、行为模式。掌握行为分析、身份识别、安全监控的专业技能。</p>
+                  <ul class="usa-list">
+                    <li>驾驶行为特征分析</li>
+                    <li>操作模式身份识别</li>
+                    <li>安全监控行为认证</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openLicenseModal('behavior-driving')">行为认证</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section class="usa-section usa-section--dark" id="faq">
+      <div class="grid-container">
+        <h2 class="font-heading-xl margin-top-0">常见问题解答</h2>
+        <p class="usa-intro">为您解答小鼠帝国身份服务使用过程中的常见疑问，从尾巴身份证申请标准到奶酪护照认证要求，从洞穴通行证办理规范到胡须驾驶证测试流程。</p>
+        
+        <div class="usa-accordion margin-top-4">
+          <h4 class="usa-accordion__heading">
+            <button class="usa-accordion__button" aria-expanded="false" aria-controls="faq1">
+              如何申请尾巴身份证？
+            </button>
+          </h4>
+          <div id="faq1" class="usa-accordion__content">
+            <p>申请尾巴身份证的步骤：</p>
+            <ol class="usa-list">
+              <li>测量您的尾巴长度（必须达到小鼠帝国标准18厘米以上）</li>
+              <li>进行尾巴生物特征采集，包括毛发纹理、色素分布、弹性测试</li>
+              <li>完成尾巴纹图谱数据库登记，建立个人专属生物识别档案</li>
+              <li>通过尾巴身份认证考试，包括理论知识和实操技能两部分</li>
+              <li>获得尾巴身份证，有效期为十年，需定期进行生物特征更新</li>
+              <li>每年参加身份认证继续教育，保持专业技能和知识更新</li>
+            </ol>
+            <p>申请过程完全免费，但需要提供尾巴健康证明和无犯罪记录证明。</p>
+          </div>
+
+          <h4 class="usa-accordion__heading">
+            <button class="usa-accordion__button" aria-expanded="false" aria-controls="faq2">
+              千鼠万才生物识别计划有什么特殊要求？
+            </button>
+          </h4>
+          <div id="faq2" class="usa-accordion__content">
+            <p>千鼠万才生物识别计划的特殊要求如下：</p>
+            <ul class="usa-list">
+              <li><strong>尾巴长度要求：</strong>申请者尾巴长度必须达到22厘米以上，以确保足够的生物特征信息</li>
+              <li><strong>胡须密度标准：</strong>胡须密度必须达到每平方厘米75根以上，体现良好的感官生物特征</li>
+              <li><strong>奶酪消费记录：</strong>需要提供连续五年的奶酪消费记录，证明稳定的味觉行为特征</li>
+              <li><strong>洞穴居住历史：</strong>必须拥有连续的洞穴居住记录，体现稳定的地理行为特征</li>
+              <li><strong>生物特征资金要求：</strong>需要自备至少300克优质奶酪作为生物特征分析材料</li>
+              <li><strong>家族身份记录：</strong>申请者家族中至少有连续七代小鼠身份认证记录</li>
+            </ul>
+            <p>所有申请者都需要通过严格的生物特征识别测试，确保具备良好的身份认证素质。</p>
+          </div>
+
+          <h4 class="usa-accordion__heading">
+            <button class="usa-accordion__button" aria-expanded="false" aria-controls="faq3">
+              奶酪护照的主要认证内容是什么？
+            </button>
+          </h4>
+          <div id="faq3" class="usa-accordion__content">
+            <p>奶酪护照的主要认证内容包括：</p>
+            <ul class="usa-list">
+              <li><strong>奶酪消费偏好分析：</strong>详细记录个人对不同种类奶酪的偏好程度和选择模式</li>
+              <li><strong>味觉敏感度测试：</strong>通过专业味觉测试评估个人对奶酪风味物质的敏感程度</li>
+              <li><strong>营养需求特征识别：</strong>分析个人奶酪消费中的营养需求和补充模式</li>
+              <li><strong>品尝行为特征记录：</strong>记录个人品尝奶酪时的行为特征和习惯模式</li>
+              <li><strong>消费时间规律监测：</strong>监测个人奶酪消费的时间规律和频率特征</li>
+              <li><strong>品牌忠诚度评估：</strong>评估个人对奶酪品牌的忠诚度和选择稳定性</li>
+            </ul>
+            <p>奶酪护照按消费行为特征进行身份认证，认证有效期为五年，需定期进行味觉行为更新。</p>
+          </div>
+
+          <h4 class="usa-accordion__heading">
+            <button class="usa-accordion__button" aria-expanded="false" aria-controls="faq4">
+              胡须驾驶证的职业前景如何？
+            </button>
+          </h4>
+          <div id="faq4" class="usa-accordion__content">
+            <p>胡须驾驶证的职业前景非常广阔：</p>
+            <ul class="usa-list">
+              <li><strong>需求量大：</strong>随着小鼠驾驶员数量增长，对专业胡须驾驶证认证员的需求持续增加，年增长率达到55%</li>
+              <li><strong>薪资水平高：</strong>初级认证员月薪可达700克奶酪，资深认证员月薪超过3500克</li>
+              <li><strong>技术含量高：</strong>需要掌握胡须生物识别技术、驾驶安全评估、行为分析等多项专业技能</li>
+              <li><strong>社会地位高：</strong>在小鼠社会中享有很高声誉，被誉为"驾驶安全官"</li>
+              <li><strong>发展空间大：</strong>可向胡须生物识别专家、驾驶安全顾问、交通安全专家等方向发展</li>
+              <li><strong>国际机会多：</strong>小鼠帝国的胡须生物识别技术世界领先，有机会参与国际交通安全建设项目</li>
+            </ul>
+            <p>该职业需要通过严格的胡须生物识别技术认证和驾驶安全评估考试，但回报丰厚，是小鼠帝国最受欢迎的身份认证职业之一。</p>
+          </div>
+
+          <h4 class="usa-accordion__heading">
+            <button class="usa-accordion__button" aria-expanded="false" aria-controls="faq5">
+              洞穴通行证需要具备哪些条件？
+            </button>
+          </h4>
+          <div id="faq5" class="usa-accordion__content">
+            <p>洞穴通行证需要具备以下条件：</p>
+            <ul class="usa-list">
+              <li><strong>洞穴居住时长要求：</strong>申请者必须在当前洞穴连续居住满三年以上，体现稳定的居住特征</li>
+              <li><strong>洞穴环境适应性：</strong>必须适应洞穴的湿度、温度、通风等环境条件，体现良好的居住适应性</li>
+              <li><strong>地理行为特征：</strong>需要具备独特的洞穴地理行为特征，包括出入习惯、活动范围、居住偏好等</li>
+              <li><strong>洞穴历史记录：</strong>拥有完整的洞穴居住历史记录，包括居住时间、洞穴变迁、环境适应等</li>
+              <li><strong>地理识别能力：</strong>具备对洞穴地理环境的识别能力和方向感，能够在复杂洞穴环境中准确定位</li>
+              <li><strong>社区居住证明：</strong>获得所在洞穴社区的居住证明和邻居推荐信，证明良好的社区居住记录</li>
+            </ul>
+            <p>洞穴通行证按地理行为特征进行身份认证，基础有效期为三年，需定期进行地理行为特征更新和居住环境适应性评估。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section class="usa-section" id="contact">
+      <div class="grid-container">
+        <h2 class="font-heading-xl margin-top-0">需要身份帮助？</h2>
+        <p class="usa-intro">我们的小鼠帝国身份服务团队随时为您提供专业咨询和支持，从尾巴身份认证咨询到奶酪护照指导，从洞穴通行证分析到胡须驾驶证建议。</p>
+        
+        <div class="grid-row grid-gap-lg margin-top-4">
+          <div class="tablet:grid-col-3">
+            <div class="usa-summary-box">
+              <div class="usa-summary-box__body text-center">
+                <i class="fas fa-phone fa-2x text-primary margin-bottom-2"></i>
+                <h3 class="usa-summary-box__heading">尾巴身份热线</h3>
+                <p class="usa-summary-box__text">
+                  <strong>400-TAIL-ID</strong><br>
+                  周一至周五 9:00-17:00
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-3">
+            <div class="usa-summary-box">
+              <div class="usa-summary-box__body text-center">
+                <i class="fas fa-envelope fa-2x text-primary margin-bottom-2"></i>
+                <h3 class="usa-summary-box__heading">奶酪护照邮箱</h3>
+                <p class="usa-summary-box__text">
+                  <strong>cheese@mouseid.com</strong><br>
+                  24小时内回复
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-3">
+            <div class="usa-summary-box">
+              <div class="usa-summary-box__body text-center">
+                <i class="fas fa-comments fa-2x text-primary margin-bottom-2"></i>
+                <h3 class="usa-summary-box__heading">胡须身份咨询</h3>
+                <p class="usa-summary-box__text">
+                  胡须造型身份顾问在线<br>
+                  工作日 9:00-18:00
+                </p>
+                <button class="usa-button usa-button--outline margin-top-2" onclick="openIdentityChat()">开始咨询</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-3">
+            <div class="usa-summary-box">
+              <div class="usa-summary-box__body text-center">
+                <i class="fas fa-map-marker-alt fa-2x text-primary margin-bottom-2"></i>
+                <h3 class="usa-summary-box__heading">洞穴身份中心</h3>
+                <p class="usa-summary-box__text">
+                  就近洞穴身份网点<br>
+                  预约制服务
+                </p>
+                <button class="usa-button usa-button--outline margin-top-2" onclick="findIdentityCenter()">查找洞穴</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="usa-footer">
+    <div class="usa-footer__secondary-section">
+      <div class="grid-container">
+        <div class="grid-row grid-gap">
+          <div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
+            <div class="mobile-lg:grid-col-auto">
+              <img class="usa-footer__logo-img" src="images/logo.png" alt="小鼠帝国总务管理局">
+            </div>
+            <div class="mobile-lg:grid-col-auto">
+              <h3 class="usa-footer__logo-heading">小鼠帝国总务管理局</h3>
+            </div>
+          </div>
+          <div class="usa-footer__contact-links mobile-lg:grid-col-6">
+            <div class="usa-footer__social-links">
+              <a href="tel:400-TAIL-ID" class="usa-footer__social-link">
+                <span>尾巴身份热线：400-TAIL-ID</span>
+              </a>
+              <a href="mailto:cheese@mouseid.com" class="usa-footer__social-link">
+                <span>奶酪护照邮箱：cheese@mouseid.com</span>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </header>
-
-  <div class="banner-wrapper">
-    <div class="banner-div" style="background-image: url(images/Homepage_Banner.png.webp);"></div>
-  </div>
-
-  <div class="welcome-box-wrapper">
-    <div class="welcome-box">
-      <h1 id="skip-to-h1" style="color: #ffffff;">
-        身份服务
-      </h1>
-      <p style="color: #ffffff;">
-        小鼠帝国总务管理局为您提供全面的身份服务，包括身份证办理，护照申请，出生登记和死亡登记。
-      </p>
-    </div>
-  </div>
-
-  <main class="main-content usa-layout-docs no-footer-gap" id="main-content">
-    <div class="grid-container usa-section">
-      <div class="usa-accordion" style="margin-top: 2rem;">
-        <h2 class="usa-accordion__heading">
-          <button class="usa-accordion__button" aria-expanded="false" aria-controls="acc1">
-            <span class="usa-accordion__button-text">身份证办理</span>
-            <span class="usa-accordion__icon" aria-hidden="true"></span>
-          </button>
-        </h2>
-        <div id="acc1" class="usa-accordion__content usa-prose">
-          <p>了解小鼠帝国身份证办理流程和要求，包括首次办理、换领、补领等。我们提供身份证办理咨询和预约服务。</p>
-          <ul>
-            <li>身份证办理流程</li>
-            <li>所需材料准备</li>
-            <li>办理地点查询</li>
-            <li>办理时间和费用</li>
-          </ul>
-        </div>
-
-        <h2 class="usa-accordion__heading">
-          <button class="usa-accordion__button" aria-expanded="false" aria-controls="acc2">
-            <span class="usa-accordion__button-text">护照申请</span>
-            <span class="usa-accordion__icon" aria-hidden="true"></span>
-          </button>
-        </h2>
-        <div id="acc2" class="usa-accordion__content usa-prose">
-          <p>了解小鼠帝国护照申请流程和要求，包括普通护照、公务护照、外交护照等。我们提供护照申请咨询和加急服务。</p>
-          <ul>
-            <li>护照申请流程</li>
-            <li>所需材料准备</li>
-            <li>加急服务办理</li>
-            <li>护照延期和换发</li>
-          </ul>
-        </div>
-
-        <h2 class="usa-accordion__heading">
-          <button class="usa-accordion__button" aria-expanded="false" aria-controls="acc3">
-            <span class="usa-accordion__button-text">出生登记</span>
-            <span class="usa-accordion__icon" aria-hidden="true"></span>
-          </button>
-        </h2>
-        <div id="acc3" class="usa-accordion__content usa-prose">
-          <p>了解小鼠帝国出生登记流程和要求，包括新生儿出生登记、出生证明办理等。我们提供出生登记咨询和材料审核服务。</p>
-          <ul>
-            <li>出生登记流程</li>
-            <li>所需材料准备</li>
-            <li>出生证明办理</li>
-            <li>出生信息修改</li>
-          </ul>
-        </div>
-
-        <h2 class="usa-accordion__heading">
-          <button class="usa-accordion__button" aria-expanded="false" aria-controls="acc4">
-            <span class="usa-accordion__button-text">死亡登记</span>
-            <span class="usa-accordion__icon" aria-hidden="true"></span>
-          </button>
-        </h2>
-        <div id="acc4" class="usa-accordion__content usa-prose">
-          <p>了解小鼠帝国死亡登记流程和要求，包括死亡证明办理、户籍注销等。我们提供死亡登记咨询和材料审核服务。</p>
-          <ul>
-            <li>死亡登记流程</li>
-            <li>所需材料准备</li>
-            <li>死亡证明办理</li>
-            <li>户籍注销手续</li>
-          </ul>
-        </div>
-
-        <h2 class="usa-accordion__heading">
-          <button class="usa-accordion__button" aria-expanded="false" aria-controls="acc5">
-            <span class="usa-accordion__button-text">其他身份服务</span>
-            <span class="usa-accordion__icon" aria-hidden="true"></span>
-          </button>
-        </h2>
-        <div id="acc5" class="usa-accordion__content usa-prose">
-          <p>了解其他身份相关服务，包括户籍管理、婚姻登记、收养登记等。我们提供全面的身份服务咨询和办理指导。</p>
-          <ul>
-            <li>户籍管理服务</li>
-            <li>婚姻登记手续</li>
-            <li>收养登记流程</li>
-            <li>身份信息查询</li>
-          </ul>
+    <div class="usa-footer__primary-section">
+      <div class="grid-container">
+        <div class="grid-row grid-gap-lg">
+          <div class="desktop:grid-col-3">
+            <h4 class="usa-footer__primary-link">身份服务</h4>
+            <ul class="usa-list usa-list--unstyled">
+              <li><a href="#identity-services">创新证件</a></li>
+              <li><a href="#biometric-programs">生物识别</a></li>
+              <li><a href="#verification-centers">验证中心</a></li>
+              <li><a href="#identity-assessment">身份评估</a></li>
+            </ul>
+          </div>
+          <div class="desktop:grid-col-3">
+            <h4 class="usa-footer__primary-link">快速链接</h4>
+            <ul class="usa-list usa-list--unstyled">
+              <li><a href="index.html">首页</a></li>
+              <li><a href="personal-services.html">个人服务</a></li>
+              <li><a href="business-services.html">企业服务</a></li>
+              <li><a href="health-services.html">医疗服务</a></li>
+            </ul>
+          </div>
+          <div class="desktop:grid-col-3">
+            <h4 class="usa-footer__primary-link">身份资源</h4>
+            <ul class="usa-list usa-list--unstyled">
+              <li><a href="#" onclick="openIdentityMatcher()">身份匹配</a></li>
+              <li><a href="#" onclick="findIdentityCenter()">身份中心</a></li>
+              <li><a href="#faq">常见问题</a></li>
+              <li><a href="#" onclick="openIdentityChat()">身份咨询</a></li>
+            </ul>
+          </div>
+          <div class="desktop:grid-col-3">
+            <h4 class="usa-footer__primary-link">联系我们</h4>
+            <ul class="usa-list usa-list--unstyled">
+              <li><i class="fas fa-phone"></i> 400-TAIL-ID</li>
+              <li><i class="fas fa-envelope"></i> cheese@mouseid.com</li>
+              <li><i class="fas fa-clock"></i> 周一至周五 9:00-17:00</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </main>
-
-  <footer class="usa-footer usa-footer--big" role="contentinfo">
-    <div class="grid-container usa-footer__return-to-top">
-      <a href="#">返回顶部</a>
-    </div>
-    <div class="usa-footer__primary-section">
-      <div class="grid-row">
-        <div class="usa-footer__logo grid-row mobile-lg:grid-col-6">
-          <div>
-            <h4 class="usa-footer__logo-heading">小鼠帝国总务管理局</h4>
-          </div>
+    <div class="usa-footer__secondary-section">
+      <div class="grid-container">
+        <div class="usa-footer__secondary-links">
+          <nav class="usa-footer__nav">
+            <ul class="usa-footer__primary-content">
+              <li class="usa-footer__primary-link"><a href="#">隐私政策</a></li>
+              <li class="usa-footer__primary-link"><a href="#">使用条款</a></li>
+              <li class="usa-footer__primary-link"><a href="#">网站地图</a></li>
+              <li class="usa-footer__primary-link"><a href="#">无障碍声明</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="usa-footer__contact-links">
+          <p>&copy; 2024 小鼠帝国总务管理局. 保留所有权利.</p>
         </div>
       </div>
     </div>
   </footer>
 
-<script src="js/newFooter.js" defer="defer"></script>
-<script src="js/main.js"></script>
-<script src="js/accordion.js"></script>
+  <!-- 模态框 -->
+  <div id="identityMatcherModal" class="usa-modal" data-force-action="true">
+    <div class="usa-modal-content">
+      <div class="usa-modal__main">
+        <h2 class="usa-modal__heading">尾巴身份智能匹配</h2>
+        <div class="usa-modal__body">
+          <form id="identityMatcherForm" class="usa-form">
+            <div class="usa-form-group">
+              <label class="usa-label" for="tailLength">尾巴长度（厘米）</label>
+              <select class="usa-select" id="tailLength" required>
+                <option value="">请选择尾巴长度</option>
+                <option value="5-10">5-10厘米</option>
+                <option value="10-15">10-15厘米</option>
+                <option value="15-20">15-20厘米</option>
+                <option value="20+">20厘米以上</option>
+              </select>
+            </div>
+            
+            <div class="usa-form-group">
+              <label class="usa-label" for="whiskerDensity">胡须密度（根/平方厘米）</label>
+              <select class="usa-select" id="whiskerDensity" required>
+                <option value="">请选择胡须密度</option>
+                <option value="30-40">30-40根</option>
+                <option value="40-50">40-50根</option>
+                <option value="50-60">50-60根</option>
+                <option value="60+">60根以上</option>
+              </select>
+            </div>
+            
+            <div class="usa-form-group">
+              <label class="usa-label" for="cheeseConsumption">奶酪消费水平</label>
+              <select class="usa-select" id="cheeseConsumption" required>
+                <option value="">请选择奶酪消费水平</option>
+                <option value="low">低（每月100克以下）</option>
+                <option value="medium">中（每月100-500克）</option>
+                <option value="high">高（每月500-1000克）</option>
+                <option value="very-high">极高（每月1000克以上）</option>
+              </select>
+            </div>
+            
+            <div class="usa-form-group">
+              <label class="usa-label" for="caveResidence">洞穴居住经验</label>
+              <select class="usa-select" id="caveResidence" required>
+                <option value="">请选择洞穴居住经验</option>
+                <option value="none">无经验</option>
+                <option value="basic">基础（1-3年）</option>
+                <option value="intermediate">中级（3-10年）</option>
+                <option value="advanced">高级（10年以上）</option>
+              </select>
+            </div>
+          </form>
+          
+          <div id="identityMatchingResult" class="usa-summary-box" style="display: none;">
+            <div class="usa-summary-box__body">
+              <h3 class="usa-summary-box__heading">尾巴身份匹配结果</h3>
+              <div class="usa-summary-box__text">
+                <div class="identity-recommendations">
+                  <div class="identity-item">
+                    <h4>尾巴身份证</h4>
+                    <p>小鼠帝国身份部 | 办理周期15天 | 工本费200克奶酪</p>
+                  </div>
+                  <div class="identity-item">
+                    <h4>奶酪护照</h4>
+                    <p>小鼠帝国外交部 | 办理周期20天 | 工本费300克奶酪</p>
+                  </div>
+                  <div class="identity-item">
+                    <h4>洞穴通行证</h4>
+                    <p>小鼠帝国交通部 | 办理周期10天 | 工本费150克奶酪</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="usa-modal__footer">
+          <button class="usa-button usa-button--primary" onclick="matchIdentities()">匹配身份证件</button>
+          <button class="usa-button usa-button--unstyled" data-close-modal>取消</button>
+        </div>
+      </div>
+      <button class="usa-button usa-modal__close" aria-label="Close this window" data-close-modal>
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+  </div>
 
+  <script src="js/main.js"></script>
+  <script src="js/accordion.js"></script>
+  <script src="js/modifyMobileNav.js"></script>
+  <script>
+    // 页面特定功能
+    function matchIdentities() {
+      const tailLength = document.getElementById('tailLength').value;
+      const whiskerDensity = document.getElementById('whiskerDensity').value;
+      const cheeseConsumption = document.getElementById('cheeseConsumption').value;
+      const caveResidence = document.getElementById('caveResidence').value;
+
+      if (!tailLength || !whiskerDensity || !cheeseConsumption || !caveResidence) {
+        alert('请填写完整的身份背景信息');
+        return;
+      }
+
+      // 模拟尾巴身份匹配结果
+      document.getElementById('identityMatchingResult').style.display = 'block';
+    }
+
+    function openIdentityModal(identityType) {
+      alert('正在打开' + identityType + '身份认证申请页面...');
+    }
+
+    function openBiometricModal(biometricType) {
+      alert('正在打开' + biometricType + '生物识别认证申请页面...');
+    }
+
+    function openLabModal(labType) {
+      alert('正在打开' + labType + '身份验证实验室申请页面...');
+    }
+
+    function openAssessmentModal(assessmentType) {
+      alert('正在打开' + assessmentType + '身份评估服务申请页面...');
+    }
+
+    function openLicenseModal(licenseType) {
+      alert('正在打开' + licenseType + '胡须驾驶证认证申请页面...');
+    }
+
+    function openIdentityMatcher() {
+      document.getElementById('identityMatcherModal').classList.add('is-visible');
+    }
+
+    function openIdentityChat() {
+      alert('身份认证咨询功能即将开放，请使用尾巴电话咨询！');
+    }
+
+    function findIdentityCenter() {
+      alert('洞穴身份认证中心查询功能即将开放！');
+    }
+
+    // 平滑滚动到指定部分
+    function scrollToSection(sectionId) {
+      document.getElementById(sectionId).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+
+    // 页面加载完成后的初始化
+    document.addEventListener('DOMContentLoaded', function() {
+      // 添加数字动画效果
+      const observerOptions = {
+        threshold: 0.5,
+        rootMargin: '0px 0px -100px 0px'
+      };
+
+      const statsObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const numberElement = entry.target.querySelector('.usa-stat__number');
+            if (numberElement) {
+              const finalValue = numberElement.textContent;
+              let currentValue = 0;
+              const increment = finalValue.includes('+') ? 500 : 
+                             finalValue.includes('%') ? 1 : 1000;
+              
+              const timer = setInterval(() => {
+                if (currentValue < parseFloat(finalValue)) {
+                  currentValue += increment;
+                  if (finalValue.includes('+')) {
+                    numberElement.textContent = Math.floor(currentValue) + '+';
+                  } else if (finalValue.includes('%')) {
+                    numberElement.textContent = Math.floor(currentValue) + '%';
+                  } else {
+                    numberElement.textContent = Math.floor(currentValue).toLocaleString();
+                  }
+                } else {
+                  numberElement.textContent = finalValue;
+                  clearInterval(timer);
+                }
+              }, 50);
+            }
+            statsObserver.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      // 观察所有统计数据
+      document.querySelectorAll('.usa-stat').forEach(stat => {
+        statsObserver.observe(stat);
+      });
+
+      // 添加卡片悬停效果
+      document.querySelectorAll('.usa-card').forEach(card => {
+        card.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateY(-4px)';
+          this.style.transition = 'transform 0.3s ease';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+          this.style.transform = 'translateY(0)';
+        });
+      });
+    });
+  </script>
 </body>
 </html>

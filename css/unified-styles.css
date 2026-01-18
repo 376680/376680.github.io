@@ -1,0 +1,678 @@
+/* 统一页面基础框架样式 */
+
+/* 配色方案 */
+:root {
+  --primary-blue: #1E3A8A;
+  --accent-gold: #F59E0B;
+  --light-gold: #FEF3C7;
+  --bg-light: #F9FAFB;
+  --text-dark: #1F2937;
+  --text-medium: #6B7280;
+  --text-light: #9CA3AF;
+  --border-light: #E5E7EB;
+  --shadow-light: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  --shadow-medium: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-heavy: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* 基础重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 字体规范 */
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+  line-height: 1.6;
+  color: var(--text-dark);
+  background-color: #ffffff;
+}
+
+/* 标题规范 */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--text-dark);
+}
+
+h1 { font-size: 2.5rem; font-weight: 700; }
+h2 { font-size: 2rem; font-weight: 600; }
+h3 { font-size: 1.5rem; font-weight: 600; }
+h4 { font-size: 1.25rem; font-weight: 600; }
+
+/* 统一页面结构 */
+.unified-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 导航栏样式 */
+.unified-header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--border-light);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.unified-header.scrolled {
+  background: rgba(255, 255, 255, 1);
+  box-shadow: var(--shadow-light);
+}
+
+.unified-nav {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.unified-logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+
+.unified-logo img {
+  height: 32px;
+  width: auto;
+}
+
+.unified-nav-menu {
+  display: flex;
+  list-style: none;
+  gap: 2rem;
+}
+
+.unified-nav-menu a {
+  text-decoration: none;
+  color: var(--text-dark);
+  font-weight: 500;
+  transition: color 0.3s ease;
+  position: relative;
+}
+
+.unified-nav-menu a:hover,
+.unified-nav-menu a.active {
+  color: var(--primary-blue);
+}
+
+.unified-nav-menu a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: var(--accent-gold);
+}
+
+/* Hero区域样式 */
+.unified-hero {
+  position: relative;
+  height: 300px;
+  background: linear-gradient(135deg, var(--primary-blue) 0%, #3B82F6 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.unified-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300"><polygon fill="rgba(255,255,255,0.1)" points="0,300 1000,0 1000,300"/></svg>');
+}
+
+.unified-hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+  max-width: 800px;
+  padding: 0 2rem;
+}
+
+.unified-hero h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.unified-hero p {
+  font-size: 1.25rem;
+  opacity: 0.9;
+  margin-bottom: 2rem;
+}
+
+.unified-hero-icon {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.3;
+  font-size: 8rem;
+  color: white;
+}
+
+/* 主要内容区域 */
+.unified-main {
+  flex: 1;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  width: 100%;
+}
+
+/* 卡片样式 */
+.unified-card {
+  background: white;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: var(--shadow-light);
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-light);
+}
+
+.unified-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-medium);
+}
+
+.unified-card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.unified-card-icon {
+  width: 48px;
+  height: 48px;
+  background: linear-gradient(135deg, var(--primary-blue), var(--accent-gold));
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.5rem;
+}
+
+.unified-card-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+.unified-card-description {
+  color: var(--text-medium);
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.unified-card-features {
+  list-style: none;
+  margin-bottom: 1.5rem;
+}
+
+.unified-card-features li {
+  padding: 0.5rem 0;
+  color: var(--text-medium);
+  position: relative;
+  padding-left: 1.5rem;
+}
+
+.unified-card-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--accent-gold);
+  font-weight: bold;
+}
+
+/* 按钮样式 */
+.unified-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.unified-btn-primary {
+  background: var(--primary-blue);
+  color: white;
+}
+
+.unified-btn-primary:hover {
+  background: #1E40AF;
+  transform: scale(0.98);
+}
+
+.unified-btn-secondary {
+  background: white;
+  color: var(--primary-blue);
+  border: 2px solid var(--primary-blue);
+}
+
+.unified-btn-secondary:hover {
+  background: var(--primary-blue);
+  color: white;
+}
+
+.unified-btn-accent {
+  background: var(--accent-gold);
+  color: white;
+}
+
+.unified-btn-accent:hover {
+  background: #D97706;
+  transform: scale(0.98);
+}
+
+/* 网格布局 */
+.unified-grid {
+  display: grid;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.unified-grid-2 { grid-template-columns: repeat(auto-fit, minmax(500px, 1fr)); }
+.unified-grid-3 { grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); }
+.unified-grid-4 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+
+/* 手风琴组件 */
+.unified-accordion {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: var(--shadow-light);
+  border: 1px solid var(--border-light);
+}
+
+.unified-accordion-item {
+  border-bottom: 1px solid var(--border-light);
+}
+
+.unified-accordion-item:last-child {
+  border-bottom: none;
+}
+
+.unified-accordion-header {
+  background: none;
+  border: none;
+  width: 100%;
+  padding: 1.5rem 2rem;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background-color 0.3s ease;
+}
+
+.unified-accordion-header:hover {
+  background-color: var(--bg-light);
+}
+
+.unified-accordion-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.unified-accordion-icon {
+  transition: transform 0.3s ease;
+  color: var(--accent-gold);
+}
+
+.unified-accordion-item.active .unified-accordion-icon {
+  transform: rotate(180deg);
+}
+
+.unified-accordion-content {
+  padding: 0 2rem;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.unified-accordion-item.active .unified-accordion-content {
+  padding: 1.5rem 2rem;
+  max-height: 500px;
+}
+
+/* 分隔线 */
+.unified-divider {
+  width: 80%;
+  height: 1px;
+  background: var(--border-light);
+  margin: 3rem auto;
+  border: none;
+}
+
+/* 页脚样式 */
+.unified-footer {
+  background: var(--bg-light);
+  border-top: 1px solid var(--border-light);
+  padding: 3rem 0 2rem;
+  margin-top: auto;
+}
+
+.unified-footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.unified-footer-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 1rem;
+  color: var(--text-dark);
+  font-weight: 700;
+}
+
+.unified-footer-logo img {
+  height: 24px;
+  width: auto;
+}
+
+.unified-footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 1rem;
+  flex-wrap: wrap;
+}
+
+.unified-footer-links a {
+  color: var(--text-medium);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.unified-footer-links a:hover {
+  color: var(--primary-blue);
+}
+
+.unified-footer-contact {
+  color: var(--text-medium);
+  margin-bottom: 1rem;
+}
+
+.unified-footer-copyright {
+  color: var(--text-light);
+  font-size: 0.875rem;
+}
+
+/* 移动端菜单 */
+.unified-menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+/* 模态框样式 */
+.modal {
+  animation: fadeIn 0.3s ease-out;
+}
+
+/* 成功消息动画 */
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* 表单样式 */
+.unified-form input,
+.unified-form select,
+.unified-form textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--border-light);
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.unified-form input:focus,
+.unified-form select:focus,
+.unified-form textarea:focus {
+  outline: none;
+  border-color: var(--primary-blue);
+  box-shadow: 0 0 0 3px rgba(30, 58, 138, 0.1);
+}
+
+.unified-form input.error {
+  border-color: #EF4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+/* 加载动画 */
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.fa-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* 卡片操作按钮 */
+.unified-card-actions {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.unified-card-actions .unified-btn {
+  flex: 1;
+  justify-content: center;
+}
+
+/* 表格样式 */
+.unified-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.unified-table th,
+.unified-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.unified-table th {
+  background: var(--bg-light);
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .unified-nav {
+    padding: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .unified-nav-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    padding: 1rem;
+    box-shadow: var(--shadow-medium);
+    gap: 0.5rem;
+  }
+  
+  .unified-nav-menu.active {
+    display: flex;
+  }
+  
+  .unified-menu-toggle {
+    display: block;
+  }
+  
+  .unified-hero {
+    height: 250px;
+  }
+  
+  .unified-hero h1 {
+    font-size: 1.75rem;
+  }
+  
+  .unified-hero p {
+    font-size: 1rem;
+  }
+  
+  .unified-hero-icon {
+    font-size: 3rem;
+    opacity: 0.15;
+  }
+  
+  .unified-main {
+    padding: 2rem 1rem;
+  }
+  
+  .unified-grid-2,
+  .unified-grid-3,
+  .unified-grid-4 {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .unified-card {
+    padding: 1.5rem;
+  }
+  
+  .unified-card-header {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+  }
+  
+  .unified-card-icon {
+    margin: 0 auto;
+  }
+  
+  .unified-card-actions {
+    flex-direction: column;
+  }
+  
+  .unified-footer-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .unified-accordion-header {
+    padding: 1rem 1.5rem;
+  }
+  
+  .unified-accordion-content {
+    padding: 0 1.5rem;
+  }
+  
+  .unified-accordion-item.active .unified-accordion-content {
+    padding: 1rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .unified-hero h1 {
+    font-size: 1.5rem;
+  }
+  
+  .unified-hero p {
+    font-size: 0.875rem;
+  }
+  
+  .unified-card {
+    padding: 1rem;
+  }
+  
+  .unified-card-title {
+    font-size: 1.25rem;
+  }
+  
+  .unified-btn {
+    padding: 0.625rem 1.25rem;
+    font-size: 0.875rem;
+  }
+}
+
+/* 特殊状态 */
+.unified-status-primary { color: var(--primary-blue); }
+.unified-status-accent { color: var(--accent-gold); }
+.unified-status-success { color: #10B981; }
+.unified-status-warning { color: #F59E0B; }
+.unified-status-error { color: #EF4444; }
+
+/* 工具类 */
+.unified-text-center { text-align: center; }
+.unified-text-left { text-align: left; }
+.unified-text-right { text-align: right; }
+.unified-mb-1 { margin-bottom: 1rem; }
+.unified-mb-2 { margin-bottom: 2rem; }
+.unified-mb-3 { margin-bottom: 3rem; }
+.unified-mt-1 { margin-top: 1rem; }
+.unified-mt-2 { margin-top: 2rem; }
+.unified-mt-3 { margin-top: 3rem; }
+
+/* 平滑滚动 */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 加载动画 */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.unified-fade-in {
+  animation: fadeIn 0.6s ease-out;
+}

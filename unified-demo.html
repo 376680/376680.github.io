@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="zh-CN" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>统一框架示例 - 小鼠帝国总务管理局</title>
+<link rel="stylesheet" href="css/style1.css">
+<link rel="stylesheet" href="css/style2.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<body class="unified-page">
+  <!-- 统一导航栏 -->
+  <header class="unified-header">
+    <nav class="unified-nav">
+      <a href="index.html" class="unified-logo">
+        <img src="images/logo.png" alt="小鼠帝国总务管理局">
+        <span>小鼠帝国总务管理局</span>
+      </a>
+      
+      <ul class="unified-nav-menu">
+        <li><a href="index.html">首页</a></li>
+        <li><a href="personal-services.html">个人服务</a></li>
+        <li><a href="business-services.html">企业服务</a></li>
+        <li><a href="health-services.html">医疗健康</a></li>
+        <li><a href="education-services.html">教育服务</a></li>
+        <li><a href="identity-services.html">身份服务</a></li>
+        <li><a href="tax-services.html">税务服务</a></li>
+        <li><a href="disaster-services.html">灾难服务</a></li>
+      </ul>
+      
+      <button class="unified-menu-toggle">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </header>
+
+  <!-- Hero区域 -->
+  <section class="unified-hero">
+    <div class="unified-hero-content">
+      <h1>统一框架示例页面</h1>
+      <p>展示统一设计框架的所有组件和功能，确保所有子页面保持一致的高端感</p>
+      <a href="#framework-demo" class="unified-btn unified-btn-accent">
+        <i class="fas fa-play"></i>
+        查看演示
+      </a>
+    </div>
+    <div class="unified-hero-icon">
+      <i class="fas fa-cogs"></i>
+    </div>
+  </section>
+
+  <!-- 主要内容 -->
+  <main class="unified-main unified-fade-in" id="framework-demo">
+    <!-- 组件展示 -->
+    <section class="unified-mb-3">
+      <div class="unified-text-center unified-mb-2">
+        <h2>统一组件展示</h2>
+        <p class="unified-text-medium">所有子页面使用的标准化组件</p>
+      </div>
+      
+      <div class="unified-grid unified-grid-2">
+        <!-- 卡片组件 -->
+        <div class="unified-card">
+          <div class="unified-card-header">
+            <div class="unified-card-icon">
+              <i class="fas fa-cube"></i>
+            </div>
+            <h3 class="unified-card-title">标准卡片组件</h3>
+          </div>
+          <p class="unified-card-description">
+            统一的卡片样式，包含图标、标题、描述和功能列表，支持悬停效果和点击交互。
+          </p>
+          <ul class="unified-card-features">
+            <li>悬停上浮效果</li>
+            <li>阴影渐变动画</li>
+            <li>响应式布局适配</li>
+            <li>无障碍访问支持</li>
+          </ul>
+          <div class="unified-card-actions">
+            <button class="unified-btn unified-btn-primary">主要按钮</button>
+            <button class="unified-btn unified-btn-secondary">次要按钮</button>
+          </div>
+        </div>
+
+        <!-- 手风琴组件 -->
+        <div class="unified-card">
+          <div class="unified-card-header">
+            <div class="unified-card-icon">
+              <i class="fas fa-list"></i>
+            </div>
+            <h3 class="unified-card-title">手风琴组件</h3>
+          </div>
+          <p class="unified-card-description">
+            可折叠的内容展示组件，支持多面板管理和平滑动画效果。
+          </p>
+          <div class="unified-accordion">
+            <div class="unified-accordion-item">
+              <button class="unified-accordion-header">
+                <span class="unified-accordion-title">功能特点</span>
+                <i class="fas fa-chevron-down unified-accordion-icon"></i>
+              </button>
+              <div class="unified-accordion-content">
+                <ul>
+                  <li>平滑展开动画</li>
+                  <li>单面板模式</li>
+                  <li>键盘导航支持</li>
+                  <li>状态记忆功能</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="unified-divider"></div>
+
+    <!-- 交互演示 -->
+    <section class="unified-mb-3">
+      <div class="unified-text-center unified-mb-2">
+        <h2>交互效果演示</h2>
+        <p class="unified-text-medium">体验统一的交互效果和动画</p>
+      </div>
+      
+      <div class="unified-grid unified-grid-3">
+        <!-- 按钮交互 -->
+        <div class="unified-card unified-text-center">
+          <div class="unified-card-icon unified-mb-1" style="margin: 0 auto 1rem;">
+            <i class="fas fa-hand-pointer"></i>
+          </div>
+          <h4>按钮交互</h4>
+          <p>悬停、点击、禁用状态的统一视觉效果</p>
+          <div style="display: flex; gap: 0.5rem; justify-content: center; margin-top: 1rem;">
+            <button class="unified-btn unified-btn-primary">主要</button>
+            <button class="unified-btn unified-btn-secondary">次要</button>
+            <button class="unified-btn unified-btn-accent">强调</button>
+          </div>
+        </div>
+
+        <!-- 表单组件 -->
+        <div class="unified-card unified-text-center">
+          <div class="unified-card-icon unified-mb-1" style="margin: 0 auto 1rem;">
+            <i class="fas fa-edit"></i>
+          </div>
+          <h4>表单样式</h4>
+          <p>统一的输入框、选择框和验证样式</p>
+          <form class="unified-form unified-mt-2" style="text-align: left;">
+            <input type="text" placeholder="输入框样式" style="margin-bottom: 0.5rem;">
+            <select style="margin-bottom: 0.5rem;">
+              <option>选择框样式</option>
+              <option>选项1</option>
+              <option>选项2</option>
+            </select>
+          </form>
+        </div>
+
+        <!-- 状态指示 -->
+        <div class="unified-card unified-text-center">
+          <div class="unified-card-icon unified-mb-1" style="margin: 0 auto 1rem;">
+            <i class="fas fa-info-circle"></i>
+          </div>
+          <h4>状态颜色</h4>
+          <p>统一的状态指示色彩系统</p>
+          <div style="display: flex; flex-direction: column; gap: 0.5rem; margin-top: 1rem;">
+            <span class="unified-status-primary">主要状态</span>
+            <span class="unified-status-accent">强调状态</span>
+            <span class="unified-status-success">成功状态</span>
+            <span class="unified-status-warning">警告状态</span>
+            <span class="unified-status-error">错误状态</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="unified-divider"></div>
+
+    <!-- 响应式展示 -->
+    <section class="unified-mb-3">
+      <div class="unified-text-center unified-mb-2">
+        <h2>响应式适配</h2>
+        <p class="unified-text-medium">在不同设备上的显示效果</p>
+      </div>
+      
+      <div class="unified-card">
+        <h4>响应式特性</h4>
+        <div class="unified-grid unified-grid-2 unified-mt-2">
+          <div>
+            <h5><i class="fas fa-mobile-alt"></i> 移动端（< 768px）</h5>
+            <ul>
+              <li>导航栏变为汉堡菜单</li>
+              <li>卡片垂直排列</li>
+              <li>按钮宽度100%</li>
+              <li>字体大小适配</li>
+            </ul>
+          </div>
+          <div>
+            <h5><i class="fas fa-tablet-alt"></i> 平板端（768px-1024px）</h5>
+            <ul>
+              <li>双列网格布局</li>
+              <li>适当缩小间距</li>
+              <li>优化触摸目标</li>
+              <li>保持可读性</li>
+            </ul>
+          </div>
+        </div>
+        <div class="unified-mt-2">
+          <h5><i class="fas fa-desktop"></i> 桌面端（> 1024px）</h5>
+          <ul>
+            <li>多列网格布局</li>
+            <li>充分利用屏幕空间</li>
+            <li>悬停效果增强</li>
+            <li>精致的动画细节</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <div class="unified-divider"></div>
+
+    <!-- 功能测试 -->
+    <section class="unified-mb-3">
+      <div class="unified-text-center unified-mb-2">
+        <h2>功能测试区域</h2>
+        <p class="unified-text-medium">测试各种交互功能</p>
+      </div>
+      
+      <div class="unified-grid unified-grid-2">
+        <div class="unified-card">
+          <h4>消息通知测试</h4>
+          <p>点击按钮查看不同类型的消息通知</p>
+          <div style="display: flex; gap: 0.5rem; flex-wrap: wrap; margin-top: 1rem;">
+            <button class="unified-btn unified-btn-success" onclick="showNotification('success', '操作成功！')">成功</button>
+            <button class="unified-btn unified-btn-warning" onclick="showNotification('warning', '请注意检查')">警告</button>
+            <button class="unified-btn unified-btn-error" onclick="showNotification('error', '操作失败')">错误</button>
+          </div>
+        </div>
+
+        <div class="unified-card">
+          <h4>表单验证测试</h4>
+          <form class="unified-form" onsubmit="return validateTestForm(this)">
+            <input type="text" placeholder="必填字段" required style="margin-bottom: 0.5rem;">
+            <input type="email" placeholder="邮箱格式" required style="margin-bottom: 0.5rem;">
+            <button type="submit" class="unified-btn unified-btn-primary">提交测试</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 统一页脚 -->
+  <footer class="unified-footer">
+    <div class="unified-footer-content">
+      <div class="unified-footer-logo">
+        <img src="images/logo.png" alt="小鼠帝国总务管理局">
+        <span>小鼠帝国总务管理局</span>
+      </div>
+      
+      <div class="unified-footer-links">
+        <a href="index.html">首页</a>
+        <a href="personal-services.html">个人服务</a>
+        <a href="business-services.html">企业服务</a>
+        <a href="health-services.html">医疗健康</a>
+        <a href="education-services.html">教育服务</a>
+        <a href="identity-services.html">身份服务</a>
+        <a href="tax-services.html">税务服务</a>
+        <a href="disaster-services.html">灾难服务</a>
+      </div>
+      
+      <div class="unified-footer-contact">
+        <p><strong>政府服务热线：</strong>1-844-小鼠-政府</p>
+        <p><strong>服务时间：</strong>周一至周日 7:00-22:00</p>
+      </div>
+      
+      <div class="unified-footer-copyright">
+        <p>&copy; 2024 小鼠帝国总务管理局. 保留所有权利.</p>
+        <p>为小鼠居民提供便捷的政务服务</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/accordion.js"></script>
+  <script src="js/modifyMobileNav.js"></script>
+  <script>
+    // 页面特定功能测试
+    function showNotification(type, message) {
+      const colors = {
+        success: '#10B981',
+        warning: '#F59E0B',
+        error: '#EF4444'
+      };
+      
+      const notification = document.createElement('div');
+      notification.style.cssText = `
+        position: fixed;
+        top: 2rem;
+        right: 2rem;
+        background: ${colors[type]};
+        color: white;
+        padding: 1rem 1.5rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        z-index: 1001;
+        animation: slideIn 0.3s ease-out;
+      `;
+      notification.innerHTML = `<i class="fas fa-${type === 'success' ? 'check' : type === 'warning' ? 'exclamation' : 'times'}"></i> ${message}`;
+      
+      document.body.appendChild(notification);
+      
+      setTimeout(() => {
+        notification.remove();
+      }, 3000);
+    }
+    
+    function validateTestForm(form) {
+      const inputs = form.querySelectorAll('input[required]');
+      let isValid = true;
+      
+      inputs.forEach(input => {
+        if (!input.value.trim()) {
+          input.classList.add('error');
+          isValid = false;
+        } else {
+          input.classList.remove('error');
+          
+          // 邮箱格式验证
+          if (input.type === 'email' && !input.value.includes('@')) {
+            input.classList.add('error');
+            isValid = false;
+          }
+        }
+      });
+      
+      if (isValid) {
+        showNotification('success', '表单验证通过！');
+      } else {
+        showNotification('error', '请检查输入内容');
+      }
+      
+      return false; // 阻止实际提交
+    }
+    
+    // 添加按钮点击效果演示
+    document.querySelectorAll('.unified-btn').forEach(button => {
+      button.addEventListener('click', function(e) {
+        if (!this.closest('form')) {
+          // 非表单按钮的点击效果
+          this.style.transform = 'scale(0.95)';
+          setTimeout(() => {
+            this.style.transform = '';
+          }, 150);
+        }
+      });
+    });
+    
+    console.log('统一框架示例页面加载完成');
+  </script>
+</body>
+</html>

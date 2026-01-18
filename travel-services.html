@@ -4,18 +4,18 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>旅游服务 - 小鼠帝国总务管理局</title>
-<link rel="stylesheet" media="all" href="css/style1.css">
-<link rel="stylesheet" media="all" href="css/style2.css">
+<link rel="stylesheet" href="css/usa-gov-styles.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
+  <!-- 官方横幅 -->
   <div class="usa-banner" aria-label="官方网站标识" id="usagov-banner">
     <div class="usa-accordion">
       <header class="usa-banner__header">
         <div class="usa-banner__inner">
           <div class="grid-col-auto">
-            <i class="fas fa-flag" style="font-size: 20px; color: #007bff;" aria-hidden="true"></i>
+            <i class="fas fa-flag" style="font-size: 20px; color: #1E3A8A;" aria-hidden="true"></i>
           </div>
           <div class="grid-col-fill tablet:grid-col-auto">
             <p class="usa-banner__header-text">
@@ -29,6 +29,7 @@
 
   <div class="usa-overlay"></div>
 
+  <!-- 导航头部 -->
   <header class="usa-header usa-header--extended" role="banner">
     <div class="usa-navbar">
       <div class="usa-logo" id="extended-logo">
@@ -48,7 +49,7 @@
           <div class="usa-nav__secondary-links">
             <div>
               <span id="top-phone" class="usa-nav__secondary-item" data-contact-callout="visible">
-                <a href="#" style="white-space: nowrap;">政府服务热线：1-844-MOUSE-GOV</a>
+                <a href="#" style="white-space: nowrap;">政府服务热线：1-844-小鼠-政府</a>
               </span>
             </div>
           </div>
@@ -57,107 +58,311 @@
     </div>
   </header>
 
-  <div class="banner-wrapper">
-    <div class="banner-div" style="background-image: url(images/Homepage_Banner.png.webp);"></div>
-  </div>
-
-  <div class="welcome-box-wrapper">
-    <div class="welcome-box">
-      <h1 id="skip-to-h1" style="color: #ffffff;">
-        旅游服务
-      </h1>
-      <p style="color: #ffffff;">
-        小鼠帝国总务管理局为您提供全面的旅游服务，包括了解护照、未成年人旅行证件，以及进出、在境内旅行。
-      </p>
+  <!-- 主导航 -->
+  <nav aria-label="主要导航" class="usa-nav">
+    <div class="usa-nav__inner">
+      <button class="usa-nav__close">
+        <i class="fas fa-times"></i>
+      </button>
+      <ul class="usa-nav__primary usa-accordion">
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="index.html">
+            <span>首页</span>
+          </a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="personal-services.html">
+            <span>个人服务</span>
+          </a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="business-services.html">
+            <span>商业服务</span>
+          </a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="health-services.html">
+            <span>健康服务</span>
+          </a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="housing-services.html">
+            <span>住房服务</span>
+          </a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="jobs-services.html">
+            <span>就业服务</span>
+          </a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="immigration-services.html">
+            <span>移民服务</span>
+          </a>
+        </li>
+        <li class="usa-nav__primary-item active">
+          <a class="usa-nav__link" href="travel-services.html">
+            <span>旅游服务</span>
+          </a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="education-services.html">
+            <span>教育服务</span>
+          </a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="tax-services.html">
+            <span>税务服务</span>
+          </a>
+        </li>
+        <li class="usa-nav__primary-item">
+          <a class="usa-nav__link" href="disaster-services.html">
+            <span>灾难服务</span>
+          </a>
+        </li>
+      </ul>
     </div>
-  </div>
+  </nav>
 
-  <main class="main-content usa-layout-docs no-footer-gap" id="main-content">
-    <div class="grid-container usa-section">
-      <div class="usa-accordion" style="margin-top: 2rem;">
-        <h2 class="usa-accordion__heading">
-          <button class="usa-accordion__button" aria-expanded="false" aria-controls="acc1">
-            <span class="usa-accordion__button-text">护照申请</span>
-            <span class="usa-accordion__icon" aria-hidden="true"></span>
+  <!-- 英雄区域 -->
+  <section class="usa-hero" aria-label="旅游服务介绍">
+    <div class="grid-container">
+      <div class="usa-hero__callout">
+        <h1 class="usa-hero__heading">
+          <span class="usa-hero__heading--alt">旅游服务</span>
+          便捷、安全、愉快的旅行体验
+        </h1>
+        <p class="usa-hero__description">
+          小鼠帝国总务管理局为您提供全面的旅游服务，包括了解护照、未成年人旅行证件，以及进出、在境内旅行。让您的旅程更加便捷、安全、愉快。
+        </p>
+        <div class="hero-actions">
+          <button class="usa-button" onclick="scrollToServices()">
+            <i class="fas fa-passport"></i>
+            开始办理
           </button>
-        </h2>
-        <div id="acc1" class="usa-accordion__content usa-prose">
-          <p>了解护照申请流程和要求。我们提供护照申请指导和加速服务。</p>
-          <ul>
-            <li>护照申请流程</li>
-            <li>护照加急服务</li>
-            <li>护照更新</li>
-            <li>护照丢失补办</li>
-          </ul>
-        </div>
-
-        <h2 class="usa-accordion__heading">
-          <button class="usa-accordion__button" aria-expanded="false" aria-controls="acc2">
-            <span class="usa-accordion__button-text">未成年人旅行证件</span>
-            <span class="usa-accordion__icon" aria-hidden="true"></span>
+          <button class="usa-button usa-button--outline" onclick="openTravelCalculator()">
+            <i class="fas fa-calculator"></i>
+            旅行计算器
           </button>
-        </h2>
-        <div id="acc2" class="usa-accordion__content usa-prose">
-          <p>了解未成年人旅行证件要求。我们提供专门的未成年人旅行证件申请服务。</p>
-          <ul>
-            <li>未成年人护照申请</li>
-            <li>旅行同意书</li>
-            <li>监护证明</li>
-            <li>旅行证件咨询</li>
-          </ul>
-        </div>
-
-        <h2 class="usa-accordion__heading">
-          <button class="usa-accordion__button" aria-expanded="false" aria-controls="acc3">
-            <span class="usa-accordion__button-text">入境签证</span>
-            <span class="usa-accordion__icon" aria-hidden="true"></span>
-          </button>
-        </h2>
-        <div id="acc3" class="usa-accordion__content usa-prose">
-          <p>了解小鼠帝国入境签证要求。我们提供签证申请指导和咨询服务。</p>
-          <ul>
-            <li>旅游签证</li>
-            <li>商务签证</li>
-            <li>学生签证</li>
-            <li>工作签证</li>
-          </ul>
-        </div>
-
-        <h2 class="usa-accordion__heading">
-          <button class="usa-accordion__button" aria-expanded="false" aria-controls="acc4">
-            <span class="usa-accordion__button-text">境内旅行</span>
-            <span class="usa-accordion__icon" aria-hidden="true"></span>
-          </button>
-        </h2>
-        <div id="acc4" class="usa-accordion__content usa-prose">
-          <p>了解小鼠帝国境内旅行的相关规定和要求。我们提供境内旅行指导服务。</p>
-          <ul>
-            <li>境内交通信息</li>
-            <li>旅行安全指南</li>
-            <li>紧急联系方式</li>
-            <li>旅行保险</li>
-          </ul>
-        </div>
-
-        <h2 class="usa-accordion__heading">
-          <button class="usa-accordion__button" aria-expanded="false" aria-controls="acc5">
-            <span class="usa-accordion__button-text">出境旅行</span>
-            <span class="usa-accordion__icon" aria-hidden="true"></span>
-          </button>
-        </h2>
-        <div id="acc5" class="usa-accordion__content usa-prose">
-          <p>了解出境旅行的相关规定和要求。我们提供出境旅行指导服务。</p>
-          <ul>
-            <li>出境手续</li>
-            <li>海关规定</li>
-            <li>税务申报</li>
-            <li>旅行禁令查询</li>
-          </ul>
         </div>
       </div>
     </div>
+  </section>
+
+  <!-- 主要内容 -->
+  <main class="main-content usa-layout-docs no-footer-gap" id="main-content">
+    <!-- 服务概览 -->
+    <section class="services-overview">
+      <div class="grid-container">
+        <div class="section-header">
+          <h2 class="section-title">旅游服务概览</h2>
+          <p class="section-description">
+            我们提供全方位的旅游服务，从证件办理到旅行支持，确保您的每一次出行都顺利无忧
+          </p>
+        </div>
+        
+        <div class="services-grid">
+          <div class="service-card" data-service="passport">
+            <div class="service-icon">
+              <i class="fas fa-passport"></i>
+            </div>
+            <h3 class="service-title">护照申请</h3>
+            <p class="service-description">快速办理各类护照，包括新办、更新、加急等服务</p>
+            <div class="service-features">
+              <span class="feature-tag">新办护照</span>
+              <span class="feature-tag">护照更新</span>
+              <span class="feature-tag">加急服务</span>
+            </div>
+            <button class="service-button" onclick="openServiceModal('passport')">
+              了解更多 <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="service-card" data-service="minor-travel">
+            <div class="service-icon">
+              <i class="fas fa-child"></i>
+            </div>
+            <h3 class="service-title">未成年人旅行</h3>
+            <p class="service-description">为未成年人提供专门的旅行证件和监护服务</p>
+            <div class="service-features">
+              <span class="feature-tag">儿童护照</span>
+              <span class="feature-tag">旅行同意书</span>
+              <span class="feature-tag">监护证明</span>
+            </div>
+            <button class="service-button" onclick="openServiceModal('minor-travel')">
+              了解更多 <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="service-card" data-service="visa">
+            <div class="service-icon">
+              <i class="fas fa-stamp"></i>
+            </div>
+            <h3 class="service-title">入境签证</h3>
+            <p class="service-description">协助办理各类入境签证，提供专业指导</p>
+            <div class="service-features">
+              <span class="feature-tag">旅游签证</span>
+              <span class="feature-tag">商务签证</span>
+              <span class="feature-tag">学生签证</span>
+            </div>
+            <button class="service-button" onclick="openServiceModal('visa')">
+              了解更多 <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="service-card" data-service="domestic-travel">
+            <div class="service-icon">
+              <i class="fas fa-map-marked-alt"></i>
+            </div>
+            <h3 class="service-title">境内旅行</h3>
+            <p class="service-description">提供小鼠帝国境内的旅行信息和安全指导</p>
+            <div class="service-features">
+              <span class="feature-tag">交通信息</span>
+              <span class="feature-tag">安全指南</span>
+              <span class="feature-tag">紧急联系</span>
+            </div>
+            <button class="service-button" onclick="openServiceModal('domestic-travel')">
+              了解更多 <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="service-card" data-service="outbound-travel">
+            <div class="service-icon">
+              <i class="fas fa-plane-departure"></i>
+            </div>
+            <h3 class="service-title">出境旅行</h3>
+            <p class="service-description">协助办理出境手续，提供海关和税务指导</p>
+            <div class="service-features">
+              <span class="feature-tag">出境手续</span>
+              <span class="feature-tag">海关规定</span>
+              <span class="feature-tag">税务申报</span>
+            </div>
+            <button class="service-button" onclick="openServiceModal('outbound-travel')">
+              了解更多 <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+
+          <div class="service-card" data-service="travel-support">
+            <div class="service-icon">
+              <i class="fas fa-headset"></i>
+            </div>
+            <h3 class="service-title">旅行支持</h3>
+            <p class="service-description">24小时旅行支持服务，解决您的旅行问题</p>
+            <div class="service-features">
+              <span class="feature-tag">24小时热线</span>
+              <span class="feature-tag">紧急援助</span>
+              <span class="feature-tag">旅行保险</span>
+            </div>
+            <button class="service-button" onclick="openServiceModal('travel-support')">
+              了解更多 <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 特色服务 -->
+    <section class="featured-services">
+      <div class="grid-container">
+        <div class="section-header">
+          <h2 class="section-title">特色服务</h2>
+          <p class="section-description">
+            专为您的旅行需求设计的特色服务，让旅行更加便捷
+          </p>
+        </div>
+        
+        <div class="featured-grid">
+          <div class="featured-card">
+            <div class="featured-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3>加急办理</h3>
+            <p>紧急情况下的快速证件办理服务，最快24小时内完成</p>
+            <a href="#" class="featured-link">申请加急服务 <i class="fas fa-arrow-right"></i></a>
+          </div>
+          
+          <div class="featured-card">
+            <div class="featured-icon">
+              <i class="fas fa-mobile-alt"></i>
+            </div>
+            <h3>在线申请</h3>
+            <p>全程在线申请，无需排队，随时随地提交申请材料</p>
+            <a href="#" class="featured-link">开始在线申请 <i class="fas fa-arrow-right"></i></a>
+          </div>
+          
+          <div class="featured-card">
+            <div class="featured-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>安全保障</h3>
+            <p>专业的旅行安全指导，确保您的出行安全无忧</p>
+            <a href="#" class="featured-link">查看安全指南 <i class="fas fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section class="faq-section">
+      <div class="grid-container">
+        <div class="section-header">
+          <h2 class="section-title">常见问题</h2>
+          <p class="section-description">
+            解答您关于旅游服务的最常见问题
+          </p>
+        </div>
+        
+        <div class="usa-accordion">
+          <h2 class="usa-accordion__heading">
+            <button class="usa-accordion__button" aria-expanded="false" aria-controls="faq1">
+              护照办理需要多长时间？
+            </button>
+          </h2>
+          <div id="faq1" class="usa-accordion__content usa-prose">
+            <p>标准护照办理时间为4-6周。加急服务可在2-3周内完成，紧急加急服务最快可在24-72小时内完成。具体时间取决于申请类型和当前处理量。</p>
+          </div>
+
+          <h2 class="usa-accordion__heading">
+            <button class="usa-accordion__button" aria-expanded="false" aria-controls="faq2">
+              未成年人旅行需要什么特殊证件？
+            </button>
+          </h2>
+          <div id="faq2" class="usa-accordion__content usa-prose">
+            <p>未成年人旅行需要儿童护照，以及父母或法定监护人的旅行同意书。如只有一方父母陪同，需要提供另一方的同意书或监护权证明。</p>
+          </div>
+
+          <h2 class="usa-accordion__heading">
+            <button class="usa-accordion__button" aria-expanded="false" aria-controls="faq3">
+              签证申请被拒怎么办？
+            </button>
+          </h2>
+          <div id="faq3" class="usa-accordion__content usa-prose">
+            <p>如果签证申请被拒，您可以申请重新审查或重新提交申请。我们提供专业的签证咨询和指导服务，帮助您了解拒签原因并准备更完善的申请材料。</p>
+          </div>
+
+          <h2 class="usa-accordion__heading">
+            <button class="usa-accordion__button" aria-expanded="false" aria-controls="faq4">
+              旅行期间遇到问题如何获得帮助？
+            </button>
+          </h2>
+          <div id="faq4" class="usa-accordion__content usa-prose">
+            <p>我们提供24小时旅行支持热线。您可以拨打1-844-小鼠-政府获得即时帮助。在海外旅行时，也可以联系最近的小鼠帝国领事馆寻求协助。</p>
+          </div>
+
+          <h2 class="usa-accordion__heading">
+            <button class="usa-accordion__button" aria-expanded="false" aria-controls="faq5">
+              旅行保险是否必须购买？
+            </button>
+          </h2>
+          <div id="faq5" class="usa-accordion__content usa-prose">
+            <p>虽然旅行保险不是强制性的，但我们强烈建议购买。旅行保险可以为您提供医疗费用、行程取消、行李丢失等方面的保障，让您的旅行更加安心。</p>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
+  <!-- 页脚 -->
   <footer class="usa-footer usa-footer--big" role="contentinfo">
     <div class="grid-container usa-footer__return-to-top">
       <a href="#">返回顶部</a>
@@ -173,9 +378,107 @@
     </div>
   </footer>
 
-<script src="js/newFooter.js" defer="defer"></script>
-<script src="js/main.js"></script>
-<script src="js/accordion.js"></script>
+  <!-- 服务详情模态框 -->
+  <div id="serviceModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2 id="modalTitle">服务详情</h2>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- 动态内容 -->
+      </div>
+      <div class="modal-footer">
+        <button class="usa-button usa-button--outline" onclick="closeServiceModal()">关闭</button>
+        <button class="usa-button usa-button--primary" onclick="startApplication()">开始申请</button>
+      </div>
+    </div>
+  </div>
 
+  <!-- 旅行计算器模态框 -->
+  <div id="travelCalculatorModal" class="modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>旅行费用计算器</h2>
+        <span class="close">&times;</span>
+      </div>
+      <div class="modal-body">
+        <form id="travelCalculatorForm" class="calculator-form">
+          <div class="form-group">
+            <label for="destination">目的地</label>
+            <select id="destination" class="usa-select" required>
+              <option value="">请选择目的地</option>
+              <option value="domestic">小鼠帝国境内</option>
+              <option value="international">国际旅行</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="duration">旅行天数</label>
+            <input type="number" id="duration" class="usa-input" min="1" max="365" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="travelers">旅行人数</label>
+            <input type="number" id="travelers" class="usa-input" min="1" max="20" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="accommodation">住宿类型</label>
+            <select id="accommodation" class="usa-select" required>
+              <option value="">请选择住宿类型</option>
+              <option value="budget">经济型</option>
+              <option value="mid">中档酒店</option>
+              <option value="luxury">豪华酒店</option>
+            </select>
+          </div>
+          
+          <div class="form-group">
+            <label for="transport">交通方式</label>
+            <select id="transport" class="usa-select" required>
+              <option value="">请选择交通方式</option>
+              <option value="public">公共交通</option>
+              <option value="rental">租车</option>
+              <option value="flight">飞机</option>
+            </select>
+          </div>
+          
+          <button type="submit" class="usa-button usa-button--primary">
+            <i class="fas fa-calculator"></i>
+            计算费用
+          </button>
+        </form>
+        
+        <div id="calculationResult" class="result-container" style="display: none;">
+          <h3>预估费用</h3>
+          <div class="result-grid">
+            <div class="result-item">
+              <span class="result-label">证件费用：</span>
+              <span id="documentCost" class="result-value">¥0</span>
+            </div>
+            <div class="result-item">
+              <span class="result-label">交通费用：</span>
+              <span id="transportCost" class="result-value">¥0</span>
+            </div>
+            <div class="result-item">
+              <span class="result-label">住宿费用：</span>
+              <span id="accommodationCost" class="result-value">¥0</span>
+            </div>
+            <div class="result-item">
+              <span class="result-label">其他费用：</span>
+              <span id="otherCost" class="result-value">¥0</span>
+            </div>
+            <div class="result-item total">
+              <span class="result-label">总费用：</span>
+              <span id="totalCost" class="result-value">¥0</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uswds/3.0.0/js/uswds.min.js"></script>
+  <script src="js/travel-services.js"></script>
 </body>
 </html>

@@ -4,178 +4,987 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>就业服务 - 小鼠帝国总务管理局</title>
-<link rel="stylesheet" media="all" href="css/style1.css">
-<link rel="stylesheet" media="all" href="css/style2.css">
+<meta name="description" content="小鼠帝国就业服务部提供尾巴整理师、奶酪品鉴师、洞穴挖掘专家等创新职业机会，支持千鼠万店创业计划，助力实现职业梦想">
+<meta name="keywords" content="小鼠帝国就业,尾巴整理师,奶酪品鉴师,洞穴挖掘专家,千鼠万店,创业计划,职业梦想">
+<link rel="stylesheet" href="css/style1.css">
+<link rel="stylesheet" href="css/style2.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
-  <div class="usa-banner" aria-label="官方网站标识" id="usagov-banner">
+  <!-- 官方横幅 -->
+  <section class="usa-banner" aria-label="Official government website">
     <div class="usa-accordion">
       <header class="usa-banner__header">
         <div class="usa-banner__inner">
           <div class="grid-col-auto">
-            <i class="fas fa-flag" style="font-size: 20px; color: #007bff;" aria-hidden="true"></i>
+            <img class="usa-banner__header-flag" src="https://cdnjs.cloudflare.com/ajax/libs/uswds/3.0.0/img/us_flag_small.png" alt="U.S. flag">
           </div>
           <div class="grid-col-fill tablet:grid-col-auto">
-            <p class="usa-banner__header-text">
-              小鼠帝国官方政府网站
-            </p>
+            <p class="usa-banner__header-text">小鼠帝国官方政府网站</p>
           </div>
         </div>
       </header>
     </div>
-  </div>
+  </section>
 
-  <div class="usa-overlay"></div>
-
-  <header class="usa-header usa-header--extended" role="banner">
+  <!-- 导航头部 -->
+  <header class="usa-header usa-header--extended">
     <div class="usa-navbar">
       <div class="usa-logo" id="extended-logo">
-        <em class="usa-logo-text">
+        <em class="usa-logo__text">
           <a href="index.html" title="小鼠帝国总务管理局">
-            <span style="font-size: 24px; font-weight: bold; color: #1b1b1b; text-decoration: none; display: flex; align-items: center; gap: 10px;">
-              <img src="images/logo.png" alt="小鼠帝国总务管理局" style="height: 32px; width: auto;">
-              <span>小鼠帝国总务管理局</span>
+            <span class="logo-container">
+              <img src="images/logo.png" alt="小鼠帝国总务管理局" class="logo-image">
+              <span class="logo-text">小鼠帝国总务管理局</span>
             </span>
           </a>
         </em>
       </div>
-
-      <div class="navbar-right">
-        <button class="usa-menu-btn">导航菜单</button>
+      <button class="usa-menu-btn">菜单</button>
+    </div>
+    <nav aria-label="Primary navigation" class="usa-nav">
+      <div class="usa-nav__inner">
+        <button class="usa-nav__close">
+          <i class="fas fa-times"></i>
+        </button>
+        <ul class="usa-nav__primary usa-accordion">
+          <li class="usa-nav__primary-item">
+            <a href="index.html" class="usa-nav__link"><span>首页</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="personal-services.html" class="usa-nav__link"><span>个人服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="business-services.html" class="usa-nav__link"><span>企业服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="health-services.html" class="usa-nav__link"><span>医疗服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="housing-services.html" class="usa-nav__link"><span>住房服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="jobs-services.html" class="usa-nav__link usa-current"><span>就业服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="immigration-services.html" class="usa-nav__link"><span>移民服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="travel-services.html" class="usa-nav__link"><span>旅游服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="education-services.html" class="usa-nav__link"><span>教育服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="disaster-services.html" class="usa-nav__link"><span>灾难援助</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="tax-services.html" class="usa-nav__link"><span>税务服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="identity-services.html" class="usa-nav__link"><span>身份服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="complaints-services.html" class="usa-nav__link"><span>投诉服务</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="scams-services.html" class="usa-nav__link"><span>欺诈防范</span></a>
+          </li>
+          <li class="usa-nav__primary-item">
+            <a href="small-business-services.html" class="usa-nav__link"><span>小企业服务</span></a>
+          </li>
+        </ul>
         <div class="usa-nav__secondary">
-          <div class="usa-nav__secondary-links">
-            <div>
-              <span id="top-phone" class="usa-nav__secondary-item" data-contact-callout="visible">
-                <a href="#" style="white-space: nowrap;">政府服务热线：1-844-MOUSE-GOV</a>
-              </span>
+          <ul class="usa-nav__secondary-links">
+            <li class="usa-nav__secondary-item">
+              <a href="tel:1-844-小鼠-政府">
+                <span>政府服务热线：1-844-小鼠-政府</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <!-- 英雄区域 -->
+    <section class="usa-hero" aria-label="Introduction">
+      <div class="usa-hero__callout">
+        <h1 class="usa-hero__heading"><span class="usa-hero__heading--alt">就业服务</span>开启您的小鼠职业生涯</h1>
+        <p class="usa-hero__description">从尾巴整理师到奶酪品鉴专家，从洞穴挖掘工程师到胡须造型设计师，小鼠帝国为您提供最独特的职业机会。加入我们的千鼠万店创业计划，成为下一代小鼠企业家！</p>
+        <div class="usa-hero__button-group">
+          <a class="usa-button usa-button--primary" href="#job-search">探索新奇职业</a>
+          <a class="usa-button usa-button--outline" href="#career-development">千鼠万店计划</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 就业服务概述 -->
+    <section class="usa-section" id="overview">
+      <div class="grid-container">
+        <div class="usa-summary-box">
+          <div class="usa-summary-box__body">
+            <h3 class="usa-summary-box__heading">小鼠帝国就业服务概览</h3>
+            <div class="usa-summary-box__text">
+              <p>我们提供小鼠世界最具创新性的就业支持服务，帮助每一位小鼠公民找到理想的尾巴相关职业。通过我们的服务，您将获得：</p>
+              <ul class="usa-list">
+                <li>尾巴专业认证和技能培训</li>
+                <li>奶酪行业独家就业机会</li>
+                <li>洞穴挖掘工程师资格认证</li>
+                <li>胡须造型设计师职业发展</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- 统计数据 -->
+        <div class="grid-row grid-gap-lg margin-top-6">
+          <div class="tablet:grid-col-3">
+            <div class="usa-stat">
+              <div class="usa-stat__number">99,999+</div>
+              <div class="usa-stat__label">尾巴整理师认证</div>
+            </div>
+          </div>
+          <div class="tablet:grid-col-3">
+            <div class="usa-stat">
+              <div class="usa-stat__number">50,000+</div>
+              <div class="usa-stat__label">奶酪品鉴专家</div>
+            </div>
+          </div>
+          <div class="tablet:grid-col-3">
+              <div class="usa-stat">
+                <div class="usa-stat__number">120%</div>
+              <div class="usa-stat__label">胡须造型成功率</div>
+            </div>
+          </div>
+          <div class="tablet:grid-col-3">
+            <div class="usa-stat">
+              <div class="usa-stat__number">24/7</div>
+              <div class="usa-stat__label">尾巴热线支持</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 特色职业服务 -->
+    <section class="usa-section usa-section--dark" id="job-search">
+      <div class="grid-container">
+        <h2 class="font-heading-xl margin-top-0">特色职业服务</h2>
+        <p class="usa-intro">探索小鼠世界最独特的职业机会，从传统的尾巴护理到前沿的奶酪科技，每一份工作都是为小鼠公民量身定制的完美选择。</p>
+        
+        <div class="grid-row grid-gap-lg margin-top-4">
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">尾巴整理师认证</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>成为专业的尾巴整理师，为小鼠公民提供尾巴造型、清洁、保养等全方位服务。掌握尾巴按摩、毛发护理、造型设计的专业技能。</p>
+                  <ul class="usa-list">
+                    <li>尾巴按摩技术认证</li>
+                    <li>毛发护理专业培训</li>
+                    <li>造型设计创意课程</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openJobSearchModal()">申请认证</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">奶酪品鉴专家</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>成为奶酪界的品味大师，为小鼠帝国品鉴来自世界各地的优质奶酪。掌握奶酪分类、品质评估、口感分析的专业技能。</p>
+                  <ul class="usa-list">
+                    <li>奶酪分类专业认证</li>
+                    <li>品质评估技能培训</li>
+                    <li>口感分析大师课程</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openResumeModal()">品鉴培训</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">洞穴挖掘工程师</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>成为洞穴挖掘领域的专家，为小鼠社区设计和建造完美的居住洞穴。掌握地质分析、结构设计、通风系统的专业技能。</p>
+                  <ul class="usa-list">
+                    <li>地质分析专业认证</li>
+                    <li>结构设计工程师培训</li>
+                    <li>通风系统技术课程</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openInterviewModal()">挖掘认证</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 千鼠万店创业计划 -->
+    <section class="usa-section" id="career-development">
+      <div class="grid-container">
+        <h2 class="font-heading-xl margin-top-0">千鼠万店创业计划</h2>
+        <p class="usa-intro">加入小鼠帝国历史上最雄心勃勃的创业计划！我们致力于在五年内帮助一万只小鼠开设自己的特色店铺，从尾巴美容院到奶酪精品店，从洞穴装修公司到胡须造型工作室。</p>
+        
+        <div class="grid-row grid-gap-lg margin-top-4">
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">尾巴美容院</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>开设专业的尾巴美容院，为小鼠客户提供尾巴护理、造型、染色、装饰等全方位服务。掌握尾巴SPA、毛发护理、时尚造型的专业技能。</p>
+                  <ul class="usa-list">
+                    <li>尾巴SPA技术认证</li>
+                    <li>毛发护理产品供应</li>
+                    <li>时尚造型设计培训</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openCareerPlanningModal()">开店指导</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">奶酪精品店</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>经营精品奶酪店，为小鼠美食家提供来自世界各地的优质奶酪。掌握奶酪采购、储存、销售、品鉴的专业技能。</p>
+                  <ul class="usa-list">
+                    <li>奶酪采购渠道支持</li>
+                    <li>储存技术专业培训</li>
+                    <li>品鉴销售技巧指导</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openSkillsTrainingModal()">经营培训</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">胡须造型工作室</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>开设专业的胡须造型工作室，为小鼠客户提供胡须修剪、造型、染色、护理等个性化服务。掌握胡须设计、造型技术、时尚趋势的专业技能。</p>
+                  <ul class="usa-list">
+                    <li>胡须设计艺术认证</li>
+                    <li>造型技术专业培训</li>
+                    <li>时尚趋势分析指导</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openCertificationModal()">造型认证</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 创新就业支持 -->
+    <section class="usa-section usa-section--dark" id="employment-support">
+      <div class="grid-container">
+        <h2 class="font-heading-xl margin-top-0">创新就业支持</h2>
+        <p class="usa-intro">为小鼠公民提供前所未有的就业支持服务，从尾巴长度测量到胡须密度分析，从奶酪偏好测试到洞穴适应性评估，我们为每一位小鼠量身定制最适合的职业道路。</p>
+        
+        <div class="grid-row grid-gap-lg margin-top-4">
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">尾巴长度测量师</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>成为专业的尾巴长度测量师，为小鼠求职者提供精确的尾巴尺寸测量服务。掌握尾巴长度、粗度、弹性、摆动频率的专业测量技术。</p>
+                  <ul class="usa-list">
+                    <li>尾巴测量技术认证</li>
+                    <li>弹性测试专业培训</li>
+                    <li>摆动频率分析课程</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openDisabilityEmploymentModal()">测量认证</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">胡须密度分析师</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>成为胡须密度分析专家，为小鼠客户提供胡须健康状况评估和造型建议。掌握胡须密度、长度、颜色、生长速度的专业分析技术。</p>
+                  <ul class="usa-list">
+                    <li>胡须密度分析认证</li>
+                    <li>健康状况评估培训</li>
+                    <li>造型建议专业指导</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openGraduateEmploymentModal()">分析认证</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">奶酪偏好测试员</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>成为奶酪偏好测试专家，为小鼠客户提供个性化的奶酪推荐服务。掌握奶酪分类、口感分析、偏好测试、营养评估的专业技能。</p>
+                  <ul class="usa-list">
+                    <li>奶酪分类专业认证</li>
+                    <li>口感分析技能培训</li>
+                    <li>营养评估专业指导</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openSupportEmploymentModal()">测试认证</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 洞穴适应性评估 -->
+    <section class="usa-section" id="startup-support">
+      <div class="grid-container">
+        <h2 class="font-heading-xl margin-top-0">洞穴适应性评估服务</h2>
+        <p class="usa-intro">为小鼠求职者提供专业的洞穴适应性评估，确保每一位小鼠都能找到最适合自己居住和工作的洞穴环境。从湿度偏好到空间需求，从通风要求到采光条件，我们为您进行全方位的洞穴适配分析。</p>
+        
+        <div class="grid-row grid-gap-lg margin-top-4">
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">洞穴挖掘指导师</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>成为专业的洞穴挖掘指导师，为小鼠客户提供洞穴选址、设计、挖掘、装修的全方位指导服务。掌握地质勘探、结构设计、挖掘技术、装修美化的专业技能。</p>
+                  <ul class="usa-list">
+                    <li>地质勘探专业认证</li>
+                    <li>结构设计技术培训</li>
+                    <li>挖掘装修指导课程</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openStartupGuidanceModal()">指导认证</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">洞穴环境优化师</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>成为洞穴环境优化专家，为小鼠客户提供洞穴通风、采光、湿度、温度等环境优化服务。掌握环境检测、优化设计、设备配置、效果评估的专业技能。</p>
+                  <ul class="usa-list">
+                    <li>环境检测技术认证</li>
+                    <li>优化设计专业培训</li>
+                    <li>设备配置指导课程</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openStartupFundingModal()">优化认证</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-4">
+            <div class="usa-card">
+              <div class="usa-card__container">
+                <div class="usa-card__header">
+                  <h3 class="usa-card__heading">洞穴安全评估员</h3>
+                </div>
+                <div class="usa-card__body">
+                  <p>成为洞穴安全评估专家，为小鼠客户提供洞穴结构安全、环境安全、逃生通道等全方位安全评估服务。掌握结构检测、安全评估、风险分析、整改建议的专业技能。</p>
+                  <ul class="usa-list">
+                    <li>结构检测专业认证</li>
+                    <li>安全评估技术培训</li>
+                    <li>风险分析专业指导</li>
+                  </ul>
+                </div>
+                <div class="usa-card__footer">
+                  <button class="usa-button usa-button--primary" onclick="openResourceMatchingModal()">评估认证</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 常见问题 -->
+    <section class="usa-section usa-section--dark" id="faq">
+      <div class="grid-container">
+        <h2 class="font-heading-xl margin-top-0">常见问题解答</h2>
+        <p class="usa-intro">为您解答小鼠帝国就业服务使用过程中的常见疑问，从尾巴长度标准到胡须造型要求，从奶酪品鉴技巧到洞穴挖掘规范。</p>
+        
+        <div class="usa-accordion margin-top-4">
+          <h4 class="usa-accordion__heading">
+            <button class="usa-accordion__button" aria-expanded="false" aria-controls="faq1">
+              如何成为认证尾巴整理师？
+            </button>
+          </h4>
+          <div id="faq1" class="usa-accordion__content">
+            <p>成为认证尾巴整理师的步骤：</p>
+            <ol class="usa-list">
+              <li>测量您的尾巴长度（必须达到小鼠帝国标准12厘米以上）</li>
+              <li>参加尾巴整理基础课程，学习毛发护理、造型设计、按摩技术</li>
+              <li>完成至少100小时的尾巴整理实习（包括20只不同品种小鼠的尾巴）</li>
+              <li>通过尾巴整理师认证考试（包括理论和实操两部分）</li>
+              <li>获得尾巴整理师执业证书，有效期为三年</li>
+              <li>每年参加继续教育课程，保持专业技能更新</li>
+            </ol>
+            <p>认证过程完全免费，但需要提供尾巴健康证明和无犯罪记录证明。</p>
+          </div>
+
+          <h4 class="usa-accordion__heading">
+            <button class="usa-accordion__button" aria-expanded="false" aria-controls="faq2">
+              千鼠万店创业计划有什么特殊要求？
+            </button>
+          </h4>
+          <div id="faq2" class="usa-accordion__content">
+            <p>千鼠万店创业计划的特殊要求如下：</p>
+            <ul class="usa-list">
+              <li><strong>尾巴长度要求：</strong>申请者尾巴长度必须达到15厘米以上，以确保良好的平衡能力</li>
+              <li><strong>胡须密度标准：</strong>胡须密度必须达到每平方厘米50根以上，体现良好的感官能力</li>
+              <li><strong>奶酪偏好测试：</strong>需要通过奶酪偏好测试，证明对奶酪行业的热爱和了解</li>
+              <li><strong>洞穴适应性评估：</strong>必须适应不同类型洞穴环境，包括潮湿、干燥、狭窄、宽敞等</li>
+              <li><strong>创业资金要求：</strong>需要自备至少100克优质奶酪作为启动资金</li>
+              <li><strong>家族背景调查：</strong>申请者家族中至少有连续三代小鼠公民记录</li>
+            </ul>
+            <p>所有申请者都需要通过严格的尾巴摆动频率测试，确保具备良好的创业心理素质。</p>
+          </div>
+
+          <h4 class="usa-accordion__heading">
+            <button class="usa-accordion__button" aria-expanded="false" aria-controls="faq3">
+              奶酪品鉴专家的主要工作内容是什么？
+            </button>
+          </h4>
+          <div id="faq3" class="usa-accordion__content">
+            <p>奶酪品鉴专家的主要工作内容包括：</p>
+            <ul class="usa-list">
+              <li><strong>奶酪分类识别：</strong>能够准确识别超过200种不同产地、不同制作工艺的奶酪</li>
+              <li><strong>品质评估检测：</strong>通过嗅觉、味觉、触觉对奶酪的新鲜度、质地、口感进行专业评估</li>
+              <li><strong>口感分析描述：</strong>用专业术语准确描述奶酪的香味、味道、质地、余味等特征</li>
+              <li><strong>营养含量分析：</strong>分析奶酪的蛋白质、脂肪、钙含量，为小鼠客户提供营养建议</li>
+              <li><strong>储存条件监控：</strong>监控奶酪的储存温度、湿度、通风条件，确保最佳保存状态</li>
+              <li><strong>品鉴报告撰写：</strong>撰写详细的奶酪品鉴报告，包括评分、描述、推荐意见等</li>
+            </ul>
+            <p>品鉴专家需要保持胡须的清洁和敏感度，定期进行胡须护理和校准。</p>
+          </div>
+
+          <h4 class="usa-accordion__heading">
+            <button class="usa-accordion__button" aria-expanded="false" aria-controls="faq4">
+              洞穴挖掘工程师的职业前景如何？
+            </button>
+          </h4>
+          <div id="faq4" class="usa-accordion__content">
+            <p>洞穴挖掘工程师的职业前景非常广阔：</p>
+            <ul class="usa-list">
+              <li><strong>需求量大：</strong>随着小鼠人口增长，对优质洞穴的需求持续增加，年增长率达到25%</li>
+              <li><strong>薪资水平高：</strong>初级工程师月薪可达500克奶酪，资深工程师月薪超过2000克</li>
+              <li><strong>技术含量高：</strong>需要掌握地质勘探、结构设计、通风系统、安全评估等多项专业技能</li>
+              <li><strong>社会地位高：</strong>在小鼠社会中享有很高声誉，被誉为"洞穴建筑师"</li>
+              <li><strong>发展空间大：</strong>可向洞穴设计顾问、挖掘项目经理、地质勘探专家等方向发展</li>
+              <li><strong>国际机会多：</strong>小鼠帝国的洞穴挖掘技术世界领先，有机会参与国际洞穴建设项目</li>
+            </ul>
+            <p>该职业需要通过严格的挖掘技术认证和安全评估，但回报丰厚，是小鼠帝国最受欢迎的职业之一。</p>
+          </div>
+
+          <h4 class="usa-accordion__heading">
+            <button class="usa-accordion__button" aria-expanded="false" aria-controls="faq5">
+              胡须造型设计师需要具备哪些条件？
+            </button>
+          </h4>
+          <div id="faq5" class="usa-accordion__content">
+            <p>胡须造型设计师需要具备以下条件：</p>
+            <ul class="usa-list">
+              <li><strong>胡须长度要求：</strong>自身胡须长度必须达到8厘米以上，展现良好的造型基础</li>
+              <li><strong>密度标准：</strong>胡须密度必须达到每平方厘米60根以上，确保造型的饱满度</li>
+              <li><strong>色彩多样性：</strong>能够处理不同颜色的胡须，包括黑色、棕色、白色、灰色等</li>
+              <li><strong>造型创新能力：</strong>具备创意设计能力，能够根据客户脸型设计个性化造型</li>
+              <li><strong>工具使用技能：</strong>熟练使用各种胡须修剪工具、造型产品、染色剂等</li>
+              <li><strong>时尚敏感度：</strong>紧跟小鼠时尚潮流，了解最新的胡须造型趋势和流行元素</li>
+            </ul>
+            <p>需要通过胡须造型设计师认证考试，包括理论测试和实际操作两部分，通过率仅为15%，是小鼠帝国最具挑战性的职业认证之一。</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 联系我们 -->
+    <section class="usa-section" id="contact">
+      <div class="grid-container">
+        <h2 class="font-heading-xl margin-top-0">需要就业帮助？</h2>
+        <p class="usa-intro">我们的小鼠帝国就业服务团队随时为您提供专业咨询和支持，从尾巴职业咨询到胡须就业指导，从奶酪行业分析到洞穴职业推荐。</p>
+        
+        <div class="grid-row grid-gap-lg margin-top-4">
+          <div class="tablet:grid-col-3">
+            <div class="usa-summary-box">
+              <div class="usa-summary-box__body text-center">
+                <i class="fas fa-phone fa-2x text-primary margin-bottom-2"></i>
+                <h3 class="usa-summary-box__heading">尾巴就业热线</h3>
+                <p class="usa-summary-box__text">
+                  <strong>400-TAIL-JOB</strong><br>
+                  周一至周五 9:00-17:00
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-3">
+            <div class="usa-summary-box">
+              <div class="usa-summary-box__body text-center">
+                <i class="fas fa-envelope fa-2x text-primary margin-bottom-2"></i>
+                <h3 class="usa-summary-box__heading">奶酪咨询邮箱</h3>
+                <p class="usa-summary-box__text">
+                  <strong>cheese@mousegov.com</strong><br>
+                  24小时内回复
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-3">
+            <div class="usa-summary-box">
+              <div class="usa-summary-box__body text-center">
+                <i class="fas fa-comments fa-2x text-primary margin-bottom-2"></i>
+                <h3 class="usa-summary-box__heading">胡须在线咨询</h3>
+                <p class="usa-summary-box__text">
+                  胡须造型顾问在线<br>
+                  工作日 9:00-18:00
+                </p>
+                <button class="usa-button usa-button--outline margin-top-2" onclick="openJobChat()">开始咨询</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="tablet:grid-col-3">
+            <div class="usa-summary-box">
+              <div class="usa-summary-box__body text-center">
+                <i class="fas fa-map-marker-alt fa-2x text-primary margin-bottom-2"></i>
+                <h3 class="usa-summary-box__heading">洞穴就业中心</h3>
+                <p class="usa-summary-box__text">
+                  就近洞穴服务网点<br>
+                  预约制服务
+                </p>
+                <button class="usa-button usa-button--outline margin-top-2" onclick="findJobCenter()">查找洞穴</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="usa-footer">
+    <div class="usa-footer__secondary-section">
+      <div class="grid-container">
+        <div class="grid-row grid-gap">
+          <div class="usa-footer__logo grid-row mobile-lg:grid-col-6 mobile-lg:grid-gap-2">
+            <div class="mobile-lg:grid-col-auto">
+              <img class="usa-footer__logo-img" src="images/logo.png" alt="小鼠帝国总务管理局">
+            </div>
+            <div class="mobile-lg:grid-col-auto">
+              <h3 class="usa-footer__logo-heading">小鼠帝国总务管理局</h3>
+            </div>
+          </div>
+          <div class="usa-footer__contact-links mobile-lg:grid-col-6">
+            <div class="usa-footer__social-links">
+              <a href="tel:400-TAIL-JOB" class="usa-footer__social-link">
+                <span>尾巴就业热线：400-TAIL-JOB</span>
+              </a>
+              <a href="mailto:cheese@mousegov.com" class="usa-footer__social-link">
+                <span>奶酪咨询邮箱：cheese@mousegov.com</span>
+              </a>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </header>
-
-  <div class="banner-wrapper">
-    <div class="banner-div" style="background-image: url(images/Homepage_Banner.png.webp);"></div>
-  </div>
-
-  <div class="welcome-box-wrapper">
-    <div class="welcome-box">
-      <h1 id="skip-to-h1" style="color: #ffffff;">
-        就业服务
-      </h1>
-      <p style="color: #ffffff;">
-        小鼠帝国总务管理局为您提供全面的就业服务，包括就业机会和职业培训，创业支持和企业发展，商业税收和法规。
-      </p>
-    </div>
-  </div>
-
-  <main class="main-content usa-layout-docs no-footer-gap" id="main-content">
-    <div class="grid-container usa-section">
-      <div class="usa-accordion" style="margin-top: 2rem;">
-        <h2 class="usa-accordion__heading">
-          <button class="usa-accordion__button" aria-expanded="false" aria-controls="acc1">
-            <span class="usa-accordion__button-text">就业机会</span>
-            <span class="usa-accordion__icon" aria-hidden="true"></span>
-          </button>
-        </h2>
-        <div id="acc1" class="usa-accordion__content usa-prose">
-          <p>浏览小鼠帝国政府及私营部门的就业机会，包括全职、兼职和临时工作。我们提供最新的职位信息，帮助您找到合适的工作。</p>
-          <ul>
-            <li>政府职位空缺</li>
-            <li>私营企业招聘</li>
-            <li>远程工作机会</li>
-            <li>实习项目</li>
-          </ul>
-        </div>
-
-        <h2 class="usa-accordion__heading">
-          <button class="usa-accordion__button" aria-expanded="false" aria-controls="acc2">
-            <span class="usa-accordion__button-text">职业培训</span>
-            <span class="usa-accordion__icon" aria-hidden="true"></span>
-          </button>
-        </h2>
-        <div id="acc2" class="usa-accordion__content usa-prose">
-          <p>参加职业培训项目，提升您的技能和竞争力。我们提供各种培训课程，帮助您适应快速变化的就业市场。</p>
-          <ul>
-            <li>技能提升培训</li>
-            <li>职业资格认证</li>
-            <li>在线学习课程</li>
-            <li>导师指导计划</li>
-          </ul>
-        </div>
-
-        <h2 class="usa-accordion__heading">
-          <button class="usa-accordion__button" aria-expanded="false" aria-controls="acc3">
-            <span class="usa-accordion__button-text">创业支持</span>
-            <span class="usa-accordion__icon" aria-hidden="true"></span>
-          </button>
-        </h2>
-        <div id="acc3" class="usa-accordion__content usa-prose">
-          <p>获得创业指导和支持，帮助您成功启动和经营自己的企业。我们提供全面的创业资源和服务。</p>
-          <ul>
-            <li>创业指导</li>
-            <li>商业计划支持</li>
-            <li>融资渠道</li>
-            <li>市场分析</li>
-          </ul>
-        </div>
-
-        <h2 class="usa-accordion__heading">
-          <button class="usa-accordion__button" aria-expanded="false" aria-controls="acc4">
-            <span class="usa-accordion__button-text">商业税收</span>
-            <span class="usa-accordion__icon" aria-hidden="true"></span>
-          </button>
-        </h2>
-        <div id="acc4" class="usa-accordion__content usa-prose">
-          <p>了解商业税收政策和法规，确保您的企业合规经营。我们提供税务咨询和申报服务。</p>
-          <ul>
-            <li>企业税务咨询</li>
-            <li>税务申报服务</li>
-            <li>税收优惠政策</li>
-            <li>合规指导</li>
-          </ul>
-        </div>
-
-        <h2 class="usa-accordion__heading">
-          <button class="usa-accordion__button" aria-expanded="false" aria-controls="acc5">
-            <span class="usa-accordion__button-text">企业法规</span>
-            <span class="usa-accordion__icon" aria-hidden="true"></span>
-          </button>
-        </h2>
-        <div id="acc5" class="usa-accordion__content usa-prose">
-          <p>了解企业相关法规和要求，确保您的企业合法运营。我们提供法规解读和合规指导。</p>
-          <ul>
-            <li>企业注册</li>
-            <li>许可证申请</li>
-            <li>劳动法规</li>
-            <li>环保要求</li>
-          </ul>
+    <div class="usa-footer__primary-section">
+      <div class="grid-container">
+        <div class="grid-row grid-gap-lg">
+          <div class="desktop:grid-col-3">
+            <h4 class="usa-footer__primary-link">就业服务</h4>
+            <ul class="usa-list usa-list--unstyled">
+              <li><a href="#job-search">特色职业</a></li>
+              <li><a href="#career-development">创业计划</a></li>
+              <li><a href="#employment-support">创新支持</a></li>
+              <li><a href="#startup-support">洞穴评估</a></li>
+            </ul>
+          </div>
+          <div class="desktop:grid-col-3">
+            <h4 class="usa-footer__primary-link">快速链接</h4>
+            <ul class="usa-list usa-list--unstyled">
+              <li><a href="index.html">首页</a></li>
+              <li><a href="personal-services.html">个人服务</a></li>
+              <li><a href="business-services.html">企业服务</a></li>
+              <li><a href="health-services.html">医疗服务</a></li>
+            </ul>
+          </div>
+          <div class="desktop:grid-col-3">
+            <h4 class="usa-footer__primary-link">就业资源</h4>
+            <ul class="usa-list usa-list--unstyled">
+              <li><a href="#" onclick="openJobMatcher()">尾巴职业匹配</a></li>
+              <li><a href="#" onclick="findJobCenter()">洞穴服务中心</a></li>
+              <li><a href="#faq">常见问题</a></li>
+              <li><a href="#" onclick="openJobChat()">胡须在线咨询</a></li>
+            </ul>
+          </div>
+          <div class="desktop:grid-col-3">
+            <h4 class="usa-footer__primary-link">联系我们</h4>
+            <ul class="usa-list usa-list--unstyled">
+              <li><i class="fas fa-phone"></i> 400-TAIL-JOB</li>
+              <li><i class="fas fa-envelope"></i> cheese@mousegov.com</li>
+              <li><i class="fas fa-clock"></i> 周一至周五 9:00-17:00</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
-  </main>
-
-  <footer class="usa-footer usa-footer--big" role="contentinfo">
-    <div class="grid-container usa-footer__return-to-top">
-      <a href="#">返回顶部</a>
-    </div>
-    <div class="usa-footer__primary-section">
-      <div class="grid-row">
-        <div class="usa-footer__logo grid-row mobile-lg:grid-col-6">
-          <div>
-            <h4 class="usa-footer__logo-heading">小鼠帝国总务管理局</h4>
-          </div>
+    <div class="usa-footer__secondary-section">
+      <div class="grid-container">
+        <div class="usa-footer__secondary-links">
+          <nav class="usa-footer__nav">
+            <ul class="usa-footer__primary-content">
+              <li class="usa-footer__primary-link"><a href="#">隐私政策</a></li>
+              <li class="usa-footer__primary-link"><a href="#">使用条款</a></li>
+              <li class="usa-footer__primary-link"><a href="#">网站地图</a></li>
+              <li class="usa-footer__primary-link"><a href="#">无障碍声明</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="usa-footer__contact-links">
+          <p>&copy; 2024 小鼠帝国总务管理局. 保留所有权利.</p>
         </div>
       </div>
     </div>
   </footer>
 
-<script src="js/newFooter.js" defer="defer"></script>
-<script src="js/main.js"></script>
-<script src="js/accordion.js"></script>
+  <!-- 模态框 -->
+  <div id="jobMatcherModal" class="usa-modal" data-force-action="true">
+    <div class="usa-modal-content">
+      <div class="usa-modal__main">
+        <h2 class="usa-modal__heading">尾巴职业智能匹配</h2>
+        <div class="usa-modal__body">
+          <form id="jobMatcherForm" class="usa-form">
+            <div class="usa-form-group">
+              <label class="usa-label" for="tailLength">尾巴长度（厘米）</label>
+              <select class="usa-select" id="tailLength" required>
+                <option value="">请选择尾巴长度</option>
+                <option value="5-10">5-10厘米</option>
+                <option value="10-15">10-15厘米</option>
+                <option value="15-20">15-20厘米</option>
+                <option value="20+">20厘米以上</option>
+              </select>
+            </div>
+            
+            <div class="usa-form-group">
+              <label class="usa-label" for="whiskerDensity">胡须密度（根/平方厘米）</label>
+              <select class="usa-select" id="whiskerDensity" required>
+                <option value="">请选择胡须密度</option>
+                <option value="30-40">30-40根</option>
+                <option value="40-50">40-50根</option>
+                <option value="50-60">50-60根</option>
+                <option value="60+">60根以上</option>
+              </select>
+            </div>
+            
+            <div class="usa-form-group">
+              <label class="usa-label" for="cheesePreference">奶酪偏好</label>
+              <select class="usa-select" id="cheesePreference" required>
+                <option value="">请选择奶酪偏好</option>
+                <option value="soft">软质奶酪</option>
+                <option value="hard">硬质奶酪</option>
+                <option value="blue">蓝纹奶酪</option>
+                <option value="fresh">新鲜奶酪</option>
+                <option value="all">全部喜欢</option>
+              </select>
+            </div>
+            
+            <div class="usa-form-group">
+              <label class="usa-label" for="caveType">洞穴偏好</label>
+              <select class="usa-select" id="caveType" required>
+                <option value="">请选择洞穴类型</option>
+                <option value="dry">干燥洞穴</option>
+                <option value="humid">潮湿洞穴</option>
+                <option value="narrow">狭窄洞穴</option>
+                <option value="spacious">宽敞洞穴</option>
+                <option value="deep">深层洞穴</option>
+              </select>
+            </div>
+          </form>
+          
+          <div id="matchingResult" class="usa-summary-box" style="display: none;">
+            <div class="usa-summary-box__body">
+              <h3 class="usa-summary-box__heading">尾巴职业匹配结果</h3>
+              <div class="usa-summary-box__text">
+                <div class="job-recommendations">
+                  <div class="job-item">
+                    <h4>高级尾巴整理师</h4>
+                    <p>小鼠帝国尾巴美容院 | 月薪800克奶酪 | 北京洞穴区</p>
+                  </div>
+                  <div class="job-item">
+                    <h4>奶酪品鉴专家</h4>
+                    <p>皇家奶酪研究院 | 月薪1200克奶酪 | 上海洞穴区</p>
+                  </div>
+                  <div class="job-item">
+                    <h4>洞穴挖掘工程师</h4>
+                    <p>帝国洞穴建设局 | 月薪1500克奶酪 | 广州洞穴区</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="usa-modal__footer">
+          <button class="usa-button usa-button--primary" onclick="matchJobs()">匹配尾巴职业</button>
+          <button class="usa-button usa-button--unstyled" data-close-modal>取消</button>
+        </div>
+      </div>
+      <button class="usa-button usa-modal__close" aria-label="Close this window" data-close-modal>
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+  </div>
 
+  <div id="jobSearchModal" class="usa-modal" data-force-action="true">
+    <div class="usa-modal-content">
+      <div class="usa-modal__main">
+        <h2 class="usa-modal__heading">新奇职业搜索</h2>
+        <div class="usa-modal__body">
+          <p>我们的职业搜索平台汇集了小鼠世界最独特的就业机会，从尾巴造型师到奶酪品鉴师，从洞穴设计师到胡须造型专家，每一份工作都是为您量身定制的完美选择。</p>
+        </div>
+        <div class="usa-modal__footer">
+          <button class="usa-button usa-button--primary" onclick="startJobSearch()">开始尾巴职业搜索</button>
+          <button class="usa-button usa-button--unstyled" data-close-modal>稍后再说</button>
+        </div>
+      </div>
+      <button class="usa-button usa-modal__close" aria-label="Close this window" data-close-modal>
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+  </div>
+
+  <div id="resumeModal" class="usa-modal" data-force-action="true">
+    <div class="usa-modal-content">
+      <div class="usa-modal__main">
+        <h2 class="usa-modal__heading">尾巴简历优化</h2>
+        <div class="usa-modal__body">
+          <p>我们的专业团队将帮助您优化尾巴相关简历，突出您的尾巴长度、胡须密度、奶酪偏好等专业优势，提升您在小鼠就业市场的竞争力。</p>
+        </div>
+        <div class="usa-modal__footer">
+          <button class="usa-button usa-button--primary" onclick="startResumeOptimization()">优化尾巴简历</button>
+          <button class="usa-button usa-button--unstyled" data-close-modal>查看尾巴模板</button>
+        </div>
+      </div>
+      <button class="usa-button usa-modal__close" aria-label="Close this window" data-close-modal>
+        <i class="fas fa-times"></i>
+      </button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+  <script src="js/accordion.js"></script>
+  <script src="js/modifyMobileNav.js"></script>
+  <script>
+    // 页面特定功能
+    function matchJobs() {
+      const tailLength = document.getElementById('tailLength').value;
+      const whiskerDensity = document.getElementById('whiskerDensity').value;
+      const cheesePreference = document.getElementById('cheesePreference').value;
+      const caveType = document.getElementById('caveType').value;
+
+      if (!tailLength || !whiskerDensity || !cheesePreference || !caveType) {
+        alert('请填写完整的尾巴信息');
+        return;
+      }
+
+      // 模拟尾巴职业匹配结果
+      document.getElementById('matchingResult').style.display = 'block';
+    }
+
+    function openJobSearchModal() {
+      document.getElementById('jobSearchModal').classList.add('is-visible');
+    }
+
+    function openResumeModal() {
+      document.getElementById('resumeModal').classList.add('is-visible');
+    }
+
+    function openInterviewModal() {
+      alert('尾巴面试指导服务即将开放，敬请期待！');
+    }
+
+    function openCareerPlanningModal() {
+      alert('尾巴职业规划服务即将开放，敬请期待！');
+    }
+
+    function openSkillsTrainingModal() {
+      alert('奶酪技能培训服务即将开放，敬请期待！');
+    }
+
+    function openCertificationModal() {
+      alert('胡须造型认证服务即将开放，敬请期待！');
+    }
+
+    function openDisabilityEmploymentModal() {
+      alert('尾巴长度测量服务即将开放，敬请期待！');
+    }
+
+    function openGraduateEmploymentModal() {
+      alert('胡须密度分析服务即将开放，敬请期待！');
+    }
+
+    function openSupportEmploymentModal() {
+      alert('奶酪偏好测试服务即将开放，敬请期待！');
+    }
+
+    function openStartupGuidanceModal() {
+      alert('洞穴挖掘指导服务即将开放，敬请期待！');
+    }
+
+    function openStartupFundingModal() {
+      alert('洞穴环境优化服务即将开放，敬请期待！');
+    }
+
+    function openResourceMatchingModal() {
+      alert('洞穴安全评估服务即将开放，敬请期待！');
+    }
+
+    function startJobSearch() {
+      alert('新奇尾巴职业搜索服务即将启动，海量职位等您发现！');
+      document.getElementById('jobSearchModal').classList.remove('is-visible');
+    }
+
+    function startResumeOptimization() {
+      alert('尾巴简历优化服务即将启动，我们会安排专业尾巴顾问与您联系！');
+      document.getElementById('resumeModal').classList.remove('is-visible');
+    }
+
+    function openJobChat() {
+      alert('胡须在线咨询功能即将开放，请使用尾巴电话咨询！');
+    }
+
+    function findJobCenter() {
+      alert('洞穴就业服务中心查询功能即将开放！');
+    }
+
+    // 平滑滚动到指定部分
+    function scrollToSection(sectionId) {
+      document.getElementById(sectionId).scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+
+    // 页面加载完成后的初始化
+    document.addEventListener('DOMContentLoaded', function() {
+      // 添加数字动画效果
+      const observerOptions = {
+        threshold: 0.5,
+        rootMargin: '0px 0px -100px 0px'
+      };
+
+      const statsObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            const numberElement = entry.target.querySelector('.usa-stat__number');
+            if (numberElement) {
+              const finalValue = numberElement.textContent;
+              let currentValue = 0;
+              const increment = finalValue.includes('+') ? 500 : 
+                             finalValue.includes('%') ? 1 : 1000;
+              
+              const timer = setInterval(() => {
+                if (currentValue < parseFloat(finalValue)) {
+                  currentValue += increment;
+                  if (finalValue.includes('+')) {
+                    numberElement.textContent = Math.floor(currentValue) + '+';
+                  } else if (finalValue.includes('%')) {
+                    numberElement.textContent = Math.floor(currentValue) + '%';
+                  } else {
+                    numberElement.textContent = Math.floor(currentValue).toLocaleString();
+                  }
+                } else {
+                  numberElement.textContent = finalValue;
+                  clearInterval(timer);
+                }
+              }, 50);
+            }
+            statsObserver.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      // 观察所有统计数据
+      document.querySelectorAll('.usa-stat').forEach(stat => {
+        statsObserver.observe(stat);
+      });
+
+      // 添加卡片悬停效果
+      document.querySelectorAll('.usa-card').forEach(card => {
+        card.addEventListener('mouseenter', function() {
+          this.style.transform = 'translateY(-4px)';
+          this.style.transition = 'transform 0.3s ease';
+        });
+        
+        card.addEventListener('mouseleave', function() {
+          this.style.transform = 'translateY(0)';
+        });
+      });
+    });
+  </script>
 </body>
 </html>
