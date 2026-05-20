@@ -453,7 +453,7 @@
 
 <div class="welcome-box-wrapper">
 	<div class="welcome-box">
-		<h1 id="skip-to-h1">
+		<h1 id="skip-to-h1" data-random-title="true">
 			门门有点意思
 		</h1>
 		<p>
@@ -978,5 +978,21 @@ const scrollToTop = () => {
 
 <!-- Needed_for_USA.gov_uptime_check -->
 <script src="js/modifyMobileNav.js"></script>
+<script>
+const randomTitles = [
+  "小鼠帝国万岁",
+  "门门有点意思",
+  "请输入文本",
+  "Making government services easier to find",
+  "我是特别有意义的标题",
+  "卡了"
+];
+
+const randomH1 = document.querySelector('h1[data-random-title="true"]');
+if (randomH1) {
+  const randomIndex = Math.floor(Math.random() * randomTitles.length);
+  randomH1.textContent = randomTitles[randomIndex];
+}
+</script>
 </body>
 </html>
