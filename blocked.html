@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>访问被拒绝 - 小鼠帝国总务管理局</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+        }
+        .container {
+            text-align: center;
+            padding: 2rem;
+            max-width: 600px;
+        }
+        .icon {
+            font-size: 80px;
+            margin-bottom: 2rem;
+            animation: shake 2s infinite;
+        }
+        @keyframes shake {
+            0%, 100% { transform: rotate(0deg); }
+            10% { transform: rotate(-10deg); }
+            20% { transform: rotate(10deg); }
+            30% { transform: rotate(-10deg); }
+            40% { transform: rotate(10deg); }
+            50% { transform: rotate(0deg); }
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: #e74c3c;
+        }
+        .message {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+        .schedule {
+            background: rgba(255,255,255,0.1);
+            border-radius: 15px;
+            padding: 1.5rem;
+            margin-top: 2rem;
+            text-align: left;
+        }
+        .schedule h2 {
+            text-align: center;
+            margin-bottom: 1rem;
+            color: #3498db;
+        }
+        .schedule-item {
+            padding: 0.5rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .schedule-item:last-child {
+            border-bottom: none;
+        }
+        .time {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        .footer {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #888;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">🚫</div>
+        <h1>访问被拒绝</h1>
+        <p class="message">抱歉，我们拒绝了您的请求</p>
+        <p>当前处于上课时间，网站暂时无法访问。<br>请在课间休息或放学后再次尝试。</p>
+        
+        <div class="schedule">
+            <h2>📚 今日课程安排</h2>
+            <div class="schedule-item">
+                <span class="time">07:30 - 07:58</span> 早读
+            </div>
+            <div class="schedule-item">
+                <span class="time">08:00 - 08:40</span> 第一节课
+            </div>
+            <div class="schedule-item">
+                <span class="time">08:50 - 09:30</span> 第二节课
+            </div>
+            <div class="schedule-item">
+                <span class="time">09:40 - 10:20</span> 第三节课
+            </div>
+            <div class="schedule-item">
+                <span class="time">10:30 - 11:10</span> 第四节课
+            </div>
+            <div class="schedule-item">
+                <span class="time">11:25 - 12:05</span> 第五节课
+            </div>
+            <div class="schedule-item">
+                <span class="time">12:05 - 13:00</span> 午休
+            </div>
+            <div class="schedule-item">
+                <span class="time">13:00 - 13:45</span> 下午第一节
+            </div>
+            <div class="schedule-item">
+                <span class="time">13:55 - 14:45</span> 下午第二节
+            </div>
+            <div class="schedule-item">
+                <span class="time">14:50 - 15:30</span> 下午第三节
+            </div>
+            <div class="schedule-item">
+                <span class="time">16:00 - 16:40</span> 下午第四节
+            </div>
+            <div class="schedule-item">
+                <span class="time">16:50 - 17:30</span> 下午第五节
+            </div>
+        </div>
+        
+        <div class="footer">
+            <p>小鼠帝国总务管理局 · 教育管理系统</p>
+        </div>
+    </div>
+</body>
+</html>
