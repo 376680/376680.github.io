@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>安全验证</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div id="app">
+        <!-- 正常-looking验证容器 -->
+        <div class="captcha-widget">
+            <!-- 头部 -->
+            <div class="captcha-header">
+                <div class="logo">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                        <path fill="#4285f4" d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/>
+                    </svg>
+                    <span>安全验证</span>
+                </div>
+            </div>
+
+            <!-- 验证内容区 -->
+            <div class="captcha-content">
+                <!-- 复选框区域 -->
+                <div id="checkbox-area" class="checkbox-area">
+                    <div class="checkbox-wrapper">
+                        <div id="verify-checkbox" class="verify-checkbox">
+                            <div class="spinner hidden"></div>
+                            <svg class="checkmark hidden" viewBox="0 0 24 24">
+                                <path fill="none" stroke="#4CAF50" stroke-width="3" d="M5 13l4 4L19 7"/>
+                            </svg>
+                        </div>
+                        <span class="checkbox-label">我不是机器人</span>
+                    </div>
+                    <div class="privacy-links">
+                        <a href="#">隐私政策</a> - <a href="#">使用条款</a>
+                    </div>
+                </div>
+
+                <!-- 挑战区域（隐藏） -->
+                <div id="challenge-area" class="challenge-area hidden">
+                    <div class="challenge-header">
+                        <span id="challenge-title">请完成验证</span>
+                    </div>
+                    <div id="game-container" class="game-container"></div>
+                    <!-- 底部控制栏 -->
+                    <div class="challenge-controls">
+                        <button id="menu-btn" class="control-btn" title="菜单">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path fill="#666" d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                            </svg>
+                        </button>
+                        <button id="refresh-btn" class="control-btn" title="刷新">
+                            <svg viewBox="0 0 24 24" width="20" height="20">
+                                <path fill="#666" d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/>
+                            </svg>
+                        </button>
+                        <div class="progress-dots">
+                            <span class="dot active"></span>
+                            <span class="dot"></span>
+                        </div>
+                        <button id="skip-btn" class="skip-btn">跳过</button>
+                    </div>
+                </div>
+
+                <!-- 失败提示（隐藏） -->
+                <div id="error-area" class="error-area hidden">
+                    <div class="error-icon">⚠️</div>
+                    <div id="error-message" class="error-message">验证失败，请重试</div>
+                    <button id="retry-btn" class="retry-btn">重试</button>
+                </div>
+
+                <!-- 成功提示（隐藏） -->
+                <div id="success-area" class="success-area hidden">
+                    <div class="success-icon">✓</div>
+                    <div class="success-message">验证成功</div>
+                </div>
+            </div>
+
+            <!-- 底部信息 -->
+            <div class="captcha-footer">
+                <div class="brand">
+                    <span>SecurVerify™</span>
+                </div>
+                <div class="links">
+                    <a href="#">隐私</a>
+                    <a href="#">条款</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- 游戏脚本 -->
+    <script src="core/TauntMessages.js"></script>
+    <script src="core/GameController.js"></script>
+    <script src="games/PipePuzzleGame.js"></script>
+    <script src="games/ToolMatchGame.js"></script>
+    <script src="games/ImageClassifyGame.js"></script>
+    <script src="games/Warping3DGame.js"></script>
+    <script src="games/MotionDetectionGame.js"></script>
+    <script src="games/AfterimageGame.js"></script>
+    <script src="core/CaptchaSystem.js"></script>
+</body>
+</html>
