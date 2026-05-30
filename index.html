@@ -108,36 +108,6 @@
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe title="GTM" sandbox src="https://www.googletagmanager.com/ns.html?id=GTM-W8LW6DB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <!-- End Google Tag Manager (noscript) -->
-  <script>
-    (function() {
-      const now = new Date();
-      const hours = now.getHours();
-      const minutes = now.getMinutes();
-      const currentTime = hours * 60 + minutes;
-      
-      const classTimes = [
-        { start: 7 * 60 + 30, end: 7 * 60 + 58 },   // 早读 07:30 - 07:58
-        { start: 8 * 60 + 0, end: 8 * 60 + 40 },    // 第一节 08:00 - 08:40
-        { start: 8 * 60 + 50, end: 9 * 60 + 30 },   // 第二节 08:50 - 09:30
-        { start: 9 * 60 + 40, end: 10 * 60 + 20 },  // 第三节 09:40 - 10:20
-        { start: 10 * 60 + 30, end: 11 * 60 + 10 }, // 第四节 10:30 - 11:10
-        { start: 11 * 60 + 25, end: 12 * 60 + 5 },  // 第五节 11:25 - 12:05
-        { start: 13 * 60 + 0, end: 13 * 60 + 45 },  // 下午第一节 13:00 - 13:45
-        { start: 13 * 60 + 55, end: 14 * 60 + 45 }, // 下午第二节 13:55 - 14:45
-        { start: 14 * 60 + 50, end: 15 * 60 + 30 }, // 下午第三节 14:50 - 15:30
-        { start: 16 * 60 + 0, end: 16 * 60 + 40 },  // 下午第四节 16:00 - 16:40
-        { start: 16 * 60 + 50, end: 17 * 60 + 30 }  // 下午第五节 16:50 - 17:30
-      ];
-      
-      const isClassTime = classTimes.some(time => 
-        currentTime >= time.start && currentTime < time.end
-      );
-      
-      if (isClassTime) {
-        window.location.href = 'captcha/index.html';
-      }
-    })();
-  </script>
 <a href="#skip-to-h1" class="usa-skipnav usa-sr-only focusable">
  Skip to main content
 </a>
